@@ -1,0 +1,405 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dxw Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+
+  <body class="ready sticky">
+    <a class="skip" id="skip-to-content" href="#main">Skip to content</a>
+    <nav class="app-nav no-badge" aria-label="Main">
+      
+
+<ul>
+  <li><a href="/">Playbook</a></li>
+  <li>
+    <a href="/guides">Guides</a>
+    <ul>
+      
+      <li><a href="/guides/card-sort.html">Card sorting</a></li>
+      
+      <li><a href="/guides/claiming-expenses.html">Claiming expenses</a></li>
+      
+      <li><a href="/guides/contributing.html">Contributing to the Playbook</a></li>
+      
+      <li><a href="/guides/daily-standups.html">Daily standups</a></li>
+      
+      <li><a href="/guides/design-career-progression-framework.html">Design career progression framework</a></li>
+      
+      <li><a href="/guides/development-workflow.html">Development workflow</a></li>
+      
+      <li><a href="/guides/plugin-advisories.html">GovPress plugin Advisories</a></li>
+      
+      <li><a href="/guides/plugin-reviews.html">GovPress plugin reviews</a></li>
+      
+      <li><a href="/guides/">Guides</a></li>
+      
+      <li><a href="/guides/how-we-do-pitches.html">How we do pitches</a></li>
+      
+      <li><a href="/guides/how-we-do-user-research.html">How we do user research</a></li>
+      
+      <li><a href="/guides/managing.html">Managing the Playbook</a></li>
+      
+      <li><a href="/guides/office-accessibility.html">Office accessibility</a></li>
+      
+      <li><a href="/guides/week-notes.html">Project weeknotes</a></li>
+      
+      <li><a href="/guides/running-a-discovery-kick-off-workshop.html">Running a discovery kick-off workshop</a></li>
+      
+      <li><a href="/guides/running-a-roadmapping-workshop.html">Running a roadmapping workshop</a></li>
+      
+      <li><a href="/guides/service-design-at-dxw.html">Service Design approach</a></li>
+      
+      <li><a href="/guides/setting-up-a-new-project.html">Setting up a new project</a></li>
+      
+      <li><a href="/guides/show-and-tells.html">Show and tells</a></li>
+      
+      <li><a href="/guides/sprint-planning.html">Sprint Planning</a></li>
+      
+      <li><a href="/guides/support-and-on-call.html">Support and on call</a></li>
+      
+      <li><a href="/guides/team-and-project-scheduling.html">Team and project scheduling</a></li>
+      
+      <li><a href="/guides/team-changes-and-handovers.html">Team changes and handovers</a></li>
+      
+      <li><a href="/guides/tone-of-voice.html">Tone of voice</a></li>
+      
+      <li><a href="/guides/moving-a-repo-to-github.html">Transferring a repo from git.dxw.net to github</a></li>
+      
+      <li><a href="/guides/web-analytics.html">Web analytics</a></li>
+      
+      <li><a href="/guides/working-remotely.html">Working remotely</a></li>
+      
+      <li><a href="/guides/wrapping-up-a-project.html">Wrapping up a project</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+<div class="logo">
+  <a href="/" title="Back to Playbook home page">
+    <img src="/dist/dmark.png" alt="" width="32" height="32" />
+  </a>
+</div>
+
+    </nav>
+    <aside class="sidebar">
+      <div class="search" role="search">
+        <div class="input-wrap">
+          <input
+            type="search"
+            value=""
+            aria-label="Search text"
+            placeholder="Type to search"
+          />
+          <div class="clear-button">
+            <svg width="26" height="24">
+              <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,8.25,15.75,15.75"
+              ></path>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,15.75,15.75,8.25"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="results-panel"></div>
+      </div>
+      <h1 class="app-name">
+        <a class="app-name-link" data-nosearch="" href="/">dxw’s Playbook</a>
+      </h1>
+      <nav class="sidebar-nav" aria-label="sidebar">
+              <ul>
+        <li data-title="Discovery" data-content="Before committing to building something, we need to understand what the user
+needs are and if a new thing is needed. This is discovery.Discovery de-risks the future. It allows us to understand the scope of a problem
+and the best way to proceed in response.Activities in discovery include:
+  User research
+  Analysis of business needs
+  Market research
+  Journey mapping
+  Cost analysis
+We are not building software in discovery. The outputs of a discovery
+include:
+  Recommendations on the best way to proceed.
+  A prioritised list of user needs that future development work can be planned
+against.
+  Findings about current processes or the existing service.
+  Estimated scale and costs for developing a new service.
+">
+          <a href="#discovery" data-target="discovery">Discovery</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Alpha" data-content="After committing to building a new service, we need to understand how it will
+work for users and how it will integrate with existing processes and systems.
+This is alpha.Alpha results in a better and more focused service. It allows us to understand
+how users will interact with the service and what is technically possible.Activities in alpha include:
+  Building test designs or concepts
+  User testing
+  Service design
+  Technical audit and exploration of existing and legacy systems
+We are usually not building software in alpha, even though it might look like
+it. The outputs of an alpha will include:
+  Designs that have been tested and iterated with users.
+  A roadmap and plan for a beta phase.
+  Metrics to measure performance.
+  Research findings in the form of user stories and journey maps.
+">
+          <a href="#alpha" data-target="alpha">Alpha</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Beta" data-content="With a clear scope, user needs, and technical approach in place, we are ready to
+build a working version of the service. This is beta.Beta results in software that can handle real transactions and is ready to work
+at scale. It allows us to develop better services that meet user needs.Activities in beta include:
+  Developing working software
+  Testing and iterating
+  Getting the service accredited
+  Measuring performance
+  Developing and testing a security approach
+We are building software and technical infrastructure in beta. The outputs
+of a beta will include:
+  Working software that is being used for real transactions
+  Technical infrastructure to support the new service
+  Metrics about the performance of the service
+  A backlog of development tasks for ongoing iterations
+  An approach for security
+">
+          <a href="#beta" data-target="beta">Beta</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Live" data-content="Once a service is being used for real transactions, continuous improvements can
+be made based on feedback, research and data. This is live.An active digital service is never ‘done’. The live phase allows us to respond
+to change and new research findings in order to keep iterating the service.Activities in live include:
+  Iterating and improving the service
+  Measuring performance
+  User support
+  Testing the service for security
+We are continuously improving and supporting working software. The outputs
+of live will include:
+  Iterations and improvements to the service
+  Metrics on performance
+  A backlog of development tasks for ongoing iterations
+  Security tests
+">
+          <a href="#live" data-target="live">Live</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Adapting our approach" data-content="Clients have different ways of working. They may not be familiar with the
+Service Manual. Or they may have a slightly different approach to agile to us.The principles behind the Service Manual should be consistently applied in any
+project we deliver. But this doesn’t mean we need to follow a rigid, gated
+process to get things done.We can support our clients by:
+  Explaining the content and value of the service manual
+  Helping them understand terminology such as “sprint ceremonies”
+  Coaching them to think about user needs, lead ceremonies, or work openly
+  Helping them to apply the principles of the Service Manual in their own
+context
+">
+          <a href="#adapting-our-approach" data-target="adapting-our-approach">Adapting our approach</a>
+          
+        </li>
+      </ul>
+
+      </nav>
+    </aside>
+    <main>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <div style="overflow: auto;">
+            <p style="float: right;">
+              <a
+                href="https://github.com/dxw/playbook/edit/master/guides/agile-delivery-phases.md"
+                >Edit document</a
+              >
+            </p>
+          </div>
+          <h1>Agile delivery phases</h1>
+          <p>In 2011, the UK government established the Government Digital Service (GDS) to
+implement the ‘Digital by Default’ strategy proposed by Martha Lane Fox. GDS and
+the ‘Digital by Default’ strategy intended to revolutionise the way citizens
+interact with public services and government departments. Central to GDS’
+approach is the Service Manual. The Service Manual provides guidance and support
+to public sector organisations for creating and running better digital services.</p>
+
+<p><a href="https://www.gov.uk/service-manual">www.gov.uk/service-manual</a></p>
+
+<p>The Service Manual describes how an <a href="http://agilemanifesto.org/">agile approach</a>
+to delivering projects can lead to better digital services.</p>
+
+<p>The core principles of an agile approach are:</p>
+
+<ul>
+  <li>Focus on user needs</li>
+  <li>Deliver iteratively</li>
+  <li>Keep improving how your team works</li>
+  <li>Fail fast and learn quickly</li>
+  <li>Responding to change over following a plan</li>
+</ul>
+
+<p>The Service Manual describes four stages of agile delivery:</p>
+
+<ul>
+  <li>Discovery</li>
+  <li>Alpha</li>
+  <li>Beta</li>
+  <li>Live</li>
+</ul>
+
+<h2 id="discovery">Discovery</h2>
+
+<p>Before committing to building something, we need to understand what the user
+needs are and if a new thing is needed. This is <strong>discovery</strong>.</p>
+
+<p>Discovery de-risks the future. It allows us to understand the scope of a problem
+and the best way to proceed in response.</p>
+
+<p>Activities in discovery include:</p>
+
+<ul>
+  <li>User research</li>
+  <li>Analysis of business needs</li>
+  <li>Market research</li>
+  <li>Journey mapping</li>
+  <li>Cost analysis</li>
+</ul>
+
+<p><strong>We are not building software in discovery.</strong> The outputs of a discovery
+include:</p>
+
+<ul>
+  <li>Recommendations on the best way to proceed.</li>
+  <li>A prioritised list of user needs that future development work can be planned
+against.</li>
+  <li>Findings about current processes or the existing service.</li>
+  <li>Estimated scale and costs for developing a new service.</li>
+</ul>
+
+<h2 id="alpha">Alpha</h2>
+
+<p>After committing to building a new service, we need to understand how it will
+work for users and how it will integrate with existing processes and systems.
+<strong>This is alpha.</strong></p>
+
+<p>Alpha results in a better and more focused service. It allows us to understand
+how users will interact with the service and what is technically possible.</p>
+
+<p>Activities in alpha include:</p>
+
+<ul>
+  <li>Building test designs or concepts</li>
+  <li>User testing</li>
+  <li>Service design</li>
+  <li>Technical audit and exploration of existing and legacy systems</li>
+</ul>
+
+<p><strong>We are usually not building software in alpha, even though it might look like
+it.</strong> The outputs of an alpha will include:</p>
+
+<ul>
+  <li>Designs that have been tested and iterated with users.</li>
+  <li>A roadmap and plan for a beta phase.</li>
+  <li>Metrics to measure performance.</li>
+  <li>Research findings in the form of user stories and journey maps.</li>
+</ul>
+
+<h2 id="beta">Beta</h2>
+
+<p>With a clear scope, user needs, and technical approach in place, we are ready to
+build a working version of the service. <strong>This is beta.</strong></p>
+
+<p>Beta results in software that can handle real transactions and is ready to work
+at scale. It allows us to develop better services that meet user needs.</p>
+
+<p>Activities in beta include:</p>
+
+<ul>
+  <li>Developing working software</li>
+  <li>Testing and iterating</li>
+  <li>Getting the service accredited</li>
+  <li>Measuring performance</li>
+  <li>Developing and testing a security approach</li>
+</ul>
+
+<p><strong>We <em>are</em> building software and technical infrastructure in beta.</strong> The outputs
+of a beta will include:</p>
+
+<ul>
+  <li>Working software that is being used for real transactions</li>
+  <li>Technical infrastructure to support the new service</li>
+  <li>Metrics about the performance of the service</li>
+  <li>A backlog of development tasks for ongoing iterations</li>
+  <li>An approach for security</li>
+</ul>
+
+<h2 id="live">Live</h2>
+
+<p>Once a service is being used for real transactions, continuous improvements can
+be made based on feedback, research and data. <strong>This is live.</strong></p>
+
+<p>An active digital service is never ‘done’. The live phase allows us to respond
+to change and new research findings in order to keep iterating the service.</p>
+
+<p>Activities in live include:</p>
+
+<ul>
+  <li>Iterating and improving the service</li>
+  <li>Measuring performance</li>
+  <li>User support</li>
+  <li>Testing the service for security</li>
+</ul>
+
+<p><strong>We are continuously improving and supporting working software.</strong> The outputs
+of live will include:</p>
+
+<ul>
+  <li>Iterations and improvements to the service</li>
+  <li>Metrics on performance</li>
+  <li>A backlog of development tasks for ongoing iterations</li>
+  <li>Security tests</li>
+</ul>
+
+<h2 id="adapting-our-approach">Adapting our approach</h2>
+
+<p>Clients have different ways of working. They may not be familiar with the
+Service Manual. Or they may have a slightly different approach to agile to us.</p>
+
+<p>The principles behind the Service Manual should be consistently applied in any
+project we deliver. But this doesn’t mean we need to follow a rigid, gated
+process to get things done.</p>
+
+<p>We can support our clients by:</p>
+
+<ul>
+  <li>Explaining the content and value of the service manual</li>
+  <li>Helping them understand terminology such as “sprint ceremonies”</li>
+  <li>Coaching them to think about user needs, lead ceremonies, or work openly</li>
+  <li>Helping them to apply the principles of the Service Manual in their own
+context</li>
+</ul>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <button class="sidebar-toggle" aria-label="Toggle Navigation">
+        <div class="sidebar-toggle-button">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </footer>
+    <script type="text/javascript" src="/dist/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,333 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dxw Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+
+  <body class="ready sticky">
+    <a class="skip" id="skip-to-content" href="#main">Skip to content</a>
+    <nav class="app-nav no-badge" aria-label="Main">
+      
+
+<ul>
+  <li><a href="/">Playbook</a></li>
+  <li>
+    <a href="/guides">Guides</a>
+    <ul>
+      
+      <li><a href="/guides/agile-delivery-phases.html">Agile delivery phases</a></li>
+      
+      <li><a href="/guides/card-sort.html">Card sorting</a></li>
+      
+      <li><a href="/guides/claiming-expenses.html">Claiming expenses</a></li>
+      
+      <li><a href="/guides/contributing.html">Contributing to the Playbook</a></li>
+      
+      <li><a href="/guides/daily-standups.html">Daily standups</a></li>
+      
+      <li><a href="/guides/design-career-progression-framework.html">Design career progression framework</a></li>
+      
+      <li><a href="/guides/development-workflow.html">Development workflow</a></li>
+      
+      <li><a href="/guides/plugin-advisories.html">GovPress plugin Advisories</a></li>
+      
+      <li><a href="/guides/plugin-reviews.html">GovPress plugin reviews</a></li>
+      
+      <li><a href="/guides/">Guides</a></li>
+      
+      <li><a href="/guides/how-we-do-pitches.html">How we do pitches</a></li>
+      
+      <li><a href="/guides/how-we-do-user-research.html">How we do user research</a></li>
+      
+      <li><a href="/guides/managing.html">Managing the Playbook</a></li>
+      
+      <li><a href="/guides/office-accessibility.html">Office accessibility</a></li>
+      
+      <li><a href="/guides/week-notes.html">Project weeknotes</a></li>
+      
+      <li><a href="/guides/running-a-discovery-kick-off-workshop.html">Running a discovery kick-off workshop</a></li>
+      
+      <li><a href="/guides/running-a-roadmapping-workshop.html">Running a roadmapping workshop</a></li>
+      
+      <li><a href="/guides/service-design-at-dxw.html">Service Design approach</a></li>
+      
+      <li><a href="/guides/setting-up-a-new-project.html">Setting up a new project</a></li>
+      
+      <li><a href="/guides/show-and-tells.html">Show and tells</a></li>
+      
+      <li><a href="/guides/sprint-planning.html">Sprint Planning</a></li>
+      
+      <li><a href="/guides/support-and-on-call.html">Support and on call</a></li>
+      
+      <li><a href="/guides/team-and-project-scheduling.html">Team and project scheduling</a></li>
+      
+      <li><a href="/guides/team-changes-and-handovers.html">Team changes and handovers</a></li>
+      
+      <li><a href="/guides/tone-of-voice.html">Tone of voice</a></li>
+      
+      <li><a href="/guides/moving-a-repo-to-github.html">Transferring a repo from git.dxw.net to github</a></li>
+      
+      <li><a href="/guides/working-remotely.html">Working remotely</a></li>
+      
+      <li><a href="/guides/wrapping-up-a-project.html">Wrapping up a project</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+<div class="logo">
+  <a href="/" title="Back to Playbook home page">
+    <img src="/dist/dmark.png" alt="" width="32" height="32" />
+  </a>
+</div>
+
+    </nav>
+    <aside class="sidebar">
+      <div class="search" role="search">
+        <div class="input-wrap">
+          <input
+            type="search"
+            value=""
+            aria-label="Search text"
+            placeholder="Type to search"
+          />
+          <div class="clear-button">
+            <svg width="26" height="24">
+              <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,8.25,15.75,15.75"
+              ></path>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,15.75,15.75,8.25"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="results-panel"></div>
+      </div>
+      <h1 class="app-name">
+        <a class="app-name-link" data-nosearch="" href="/">dxw’s Playbook</a>
+      </h1>
+      <nav class="sidebar-nav" aria-label="sidebar">
+              <ul>
+        <li data-title="Implementing" data-content="We add Google Analytics via
+gtag.js.
+If you’re using
+whippet-theme-template, the
+code is already included
+in the footer
+and you just have to enter the correct
+tracking ID.">
+          <a href="#implementing" data-target="implementing">Implementing</a>
+                <ul>
+        <li data-title="Event tracking" data-content="By default, pageviews are the only user interaction that Google Analytics will
+record.If there are specific events you want to track that Google Analytics will not
+track by default (e.g. clicks on links to external sites, file downloads), you
+will need to implement a custom event, as per
+Google’s instructions.It’s important to note the section on
+handling timeouts.
+If you don’t do that, the links you are tracking won’t work if GA doesn’t load
+(e.g. if the user has a browser extension that blocks trackers).">
+          <a href="#event-tracking" data-target="event-tracking">Event tracking</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Configuring" data-content="There are a few basic steps it’s worth following for any site you’ve set up in
+Google Analytics:
+  Set up an unfiltered
+view
+that records all traffic, including spam. Any new view you create is
+unfiltered by default. You won’t use this view for most analysis, put it
+provides a control you can compare against, and a backup in case you get the
+filtering wrong on other views.
+  Set up a “main” view that has Google’s “Bot filtering” activated (found under
+Admin > View Settings). This should automatically remove the majority of spam
+traffic.
+  You may also want to
+filter out
+internal traffic on the main view (e.g. from within the dxw office, or
+staging/localhost versions of the site). You can do this by IP (e.g. using
+dxw’s external IP to filter out office traffic) or hostname (e.g. the staging
+site URL to filter out staging traffic).
+  To avoid double-counting page views that differ only by query string,
+follow Google’s advice
+to build a list of query parameters your site receives, then blacklist the
+ones you don’t care about using the field in View Settings.
+  Set up Google Search Console
+(formerly Google Webmaster Tools), and give Analytics access under
+Acquisition > Search Console. This will allow you to see the search queries
+people are using that return the site in Google results.
+Take some time to think about what activity on the site you might want to track.
+If you do not record a user action at the time it happens, it is lost
+forever, so the more you can set up in advance (e.g. goals for transactions
+such as newsletter sign-ups, recording of on-site search terms), the better.">
+          <a href="#configuring" data-target="configuring">Configuring</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Understanding Google Analytics" data-content="GA uses a lot of jargon. It also has a tendency to present its data as absolute
+fact, even when there are all kinds of assumptions or complexities that underlie
+it. Some good resources for understanding it:
+  Average Time on Page:
+Understanding Google Analytics’ Average Time on Page
+  Bounce rate: Adjusted Bounce Rate
+(does a good job of explaining the limitations of bounce rate, and offers a
+workaround for them)
+  ‘Direct’ Traffic:
+Guide to Direct Traffic
+  “Next Page Path”:
+Misunderstood Metrics: Next Page Path
+  View filtering:
+A better alternative to exclude filters in Google Analytics.
+This is an article about Google Tag Manager, which exposes many of the
+configuration features of GA in JavaScript.
+">
+          <a href="#understanding-google-analytics" data-target="understanding-google-analytics">Understanding Google Analytics</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Useful resources" data-content="
+  GOV.UK: Using data to improve your service
+">
+          <a href="#useful-resources" data-target="useful-resources">Useful resources</a>
+          
+        </li>
+      </ul>
+
+      </nav>
+    </aside>
+    <main>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <div style="overflow: auto;">
+            <p style="float: right;">
+              <a
+                href="https://github.com/dxw/playbook/edit/master/guides/web-analytics.md"
+                >Edit document</a
+              >
+            </p>
+          </div>
+          <h1>Web analytics</h1>
+          <p>We use Google Analytics on most of our sites. It’s free
+(<a href="https://support.google.com/analytics/answer/1070983?hl=en">within limits</a>),
+it’s easy to implement and there aren’t many things it can’t track.</p>
+
+<p>The login details for the shared Google Analytics account are kept in 1Password,
+search for “Google Analytics”.</p>
+
+<h2 id="implementing">Implementing</h2>
+
+<p>We add Google Analytics via
+<a href="https://developers.google.com/analytics/devguides/collection/gtagjs/">gtag.js</a>.
+If you’re using
+<a href="https://github.com/dxw/whippet-theme-template">whippet-theme-template</a>, the
+code is already included
+<a href="https://github.com/dxw/whippet-theme-template/blob/master/app/Theme/Analytics.php">in the footer</a>
+and you just have to enter the correct
+<a href="https://support.google.com/analytics/answer/1008080?hl=en">tracking ID</a>.</p>
+
+<h3 id="event-tracking">Event tracking</h3>
+
+<p>By default, pageviews are the only user interaction that Google Analytics will
+record.</p>
+
+<p>If there are specific events you want to track that Google Analytics will not
+track by default (e.g. clicks on links to external sites, file downloads), you
+will need to implement a custom event, as per
+<a href="https://developers.google.com/analytics/devguides/collection/gtagjs/sending-data">Google’s instructions</a>.</p>
+
+<p>It’s important to note the section on
+<a href="https://developers.google.com/analytics/devguides/collection/gtagjs/sending-data#handle_timeouts">handling timeouts</a>.
+If you don’t do that, the links you are tracking won’t work if GA doesn’t load
+(e.g. if the user has a browser extension that blocks trackers).</p>
+
+<h2 id="configuring">Configuring</h2>
+
+<p>There are a few basic steps it’s worth following for any site you’ve set up in
+Google Analytics:</p>
+
+<ul>
+  <li>Set up an unfiltered
+<a href="https://support.google.com/analytics/answer/1009714?hl=en-GB&amp;ref_topic=6014102">view</a>
+that records all traffic, including spam. Any new view you create is
+unfiltered by default. You won’t use this view for most analysis, put it
+provides a control you can compare against, and a backup in case you get the
+filtering wrong on other views.</li>
+  <li>Set up a “main” view that has Google’s “Bot filtering” activated (found under
+Admin &gt; View Settings). This should automatically remove the majority of spam
+traffic.</li>
+  <li>You may also want to
+<a href="https://support.google.com/analytics/answer/1033162?hl=en">filter out</a>
+internal traffic on the main view (e.g. from within the dxw office, or
+staging/localhost versions of the site). You can do this by IP (e.g. using
+dxw’s external IP to filter out office traffic) or hostname (e.g. the staging
+site URL to filter out staging traffic).</li>
+  <li>To avoid double-counting page views that differ only by query string,
+<a href="https://support.google.com/analytics/answer/1009671?hl=en">follow Google’s advice</a>
+to build a list of query parameters your site receives, then blacklist the
+ones you don’t care about using the field in View Settings.</li>
+  <li>Set up <a href="https://search.google.com/search-console/about">Google Search Console</a>
+(formerly Google Webmaster Tools), and give Analytics access under
+Acquisition &gt; Search Console. This will allow you to see the search queries
+people are using that return the site in Google results.</li>
+</ul>
+
+<p>Take some time to think about what activity on the site you might want to track.
+<strong>If you do not record a user action at the time it happens, it is lost
+forever</strong>, so the more you can set up in advance (e.g. goals for transactions
+such as newsletter sign-ups, recording of on-site search terms), the better.</p>
+
+<h2 id="understanding-google-analytics">Understanding Google Analytics</h2>
+
+<p>GA uses a lot of jargon. It also has a tendency to present its data as absolute
+fact, even when there are all kinds of assumptions or complexities that underlie
+it. Some good resources for understanding it:</p>
+
+<ul>
+  <li>Average Time on Page:
+<a href="https://blog.quiet.ly/insights/understanding-google-analytics-average-time-on-page/">Understanding Google Analytics’ Average Time on Page</a></li>
+  <li>Bounce rate: <a href="https://moz.com/blog/adjusted-bounce-rate">Adjusted Bounce Rate</a>
+(does a good job of explaining the limitations of bounce rate, and offers a
+workaround for them)</li>
+  <li>‘Direct’ Traffic:
+<a href="https://moz.com/blog/guide-to-direct-traffic-google-analytics">Guide to Direct Traffic</a></li>
+  <li>“Next Page Path”:
+<a href="https://help.analyticsedge.com/googleanalytics/misunderstood-metrics-next-page-path/">Misunderstood Metrics: Next Page Path</a></li>
+  <li>View filtering:
+<a href="https://www.lunametrics.com/blog/2017/08/10/a-better-alternative-to-exclude-filters-in-google-analytics/">A better alternative to exclude filters in Google Analytics</a>.
+This is an article about Google Tag Manager, which exposes many of the
+configuration features of GA in JavaScript.</li>
+</ul>
+
+<h2 id="useful-resources">Useful resources</h2>
+
+<ul>
+  <li><a href="https://www.gov.uk/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction">GOV.UK: Using data to improve your service</a></li>
+</ul>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <button class="sidebar-toggle" aria-label="Toggle Navigation">
+        <div class="sidebar-toggle-button">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </footer>
+    <script type="text/javascript" src="/dist/main.js"></script>
+  </body>
+</html>

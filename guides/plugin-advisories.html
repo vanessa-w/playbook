@@ -1,0 +1,696 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dxw Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+
+  <body class="ready sticky">
+    <a class="skip" id="skip-to-content" href="#main">Skip to content</a>
+    <nav class="app-nav no-badge" aria-label="Main">
+      
+
+<ul>
+  <li><a href="/">Playbook</a></li>
+  <li>
+    <a href="/guides">Guides</a>
+    <ul>
+      
+      <li><a href="/guides/agile-delivery-phases.html">Agile delivery phases</a></li>
+      
+      <li><a href="/guides/card-sort.html">Card sorting</a></li>
+      
+      <li><a href="/guides/claiming-expenses.html">Claiming expenses</a></li>
+      
+      <li><a href="/guides/contributing.html">Contributing to the Playbook</a></li>
+      
+      <li><a href="/guides/daily-standups.html">Daily standups</a></li>
+      
+      <li><a href="/guides/design-career-progression-framework.html">Design career progression framework</a></li>
+      
+      <li><a href="/guides/development-workflow.html">Development workflow</a></li>
+      
+      <li><a href="/guides/plugin-reviews.html">GovPress plugin reviews</a></li>
+      
+      <li><a href="/guides/">Guides</a></li>
+      
+      <li><a href="/guides/how-we-do-pitches.html">How we do pitches</a></li>
+      
+      <li><a href="/guides/how-we-do-user-research.html">How we do user research</a></li>
+      
+      <li><a href="/guides/managing.html">Managing the Playbook</a></li>
+      
+      <li><a href="/guides/office-accessibility.html">Office accessibility</a></li>
+      
+      <li><a href="/guides/week-notes.html">Project weeknotes</a></li>
+      
+      <li><a href="/guides/running-a-discovery-kick-off-workshop.html">Running a discovery kick-off workshop</a></li>
+      
+      <li><a href="/guides/running-a-roadmapping-workshop.html">Running a roadmapping workshop</a></li>
+      
+      <li><a href="/guides/service-design-at-dxw.html">Service Design approach</a></li>
+      
+      <li><a href="/guides/setting-up-a-new-project.html">Setting up a new project</a></li>
+      
+      <li><a href="/guides/show-and-tells.html">Show and tells</a></li>
+      
+      <li><a href="/guides/sprint-planning.html">Sprint Planning</a></li>
+      
+      <li><a href="/guides/support-and-on-call.html">Support and on call</a></li>
+      
+      <li><a href="/guides/team-and-project-scheduling.html">Team and project scheduling</a></li>
+      
+      <li><a href="/guides/team-changes-and-handovers.html">Team changes and handovers</a></li>
+      
+      <li><a href="/guides/tone-of-voice.html">Tone of voice</a></li>
+      
+      <li><a href="/guides/moving-a-repo-to-github.html">Transferring a repo from git.dxw.net to github</a></li>
+      
+      <li><a href="/guides/web-analytics.html">Web analytics</a></li>
+      
+      <li><a href="/guides/working-remotely.html">Working remotely</a></li>
+      
+      <li><a href="/guides/wrapping-up-a-project.html">Wrapping up a project</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+<div class="logo">
+  <a href="/" title="Back to Playbook home page">
+    <img src="/dist/dmark.png" alt="" width="32" height="32" />
+  </a>
+</div>
+
+    </nav>
+    <aside class="sidebar">
+      <div class="search" role="search">
+        <div class="input-wrap">
+          <input
+            type="search"
+            value=""
+            aria-label="Search text"
+            placeholder="Type to search"
+          />
+          <div class="clear-button">
+            <svg width="26" height="24">
+              <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,8.25,15.75,15.75"
+              ></path>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,15.75,15.75,8.25"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="results-panel"></div>
+      </div>
+      <h1 class="app-name">
+        <a class="app-name-link" data-nosearch="" href="/">dxw’s Playbook</a>
+      </h1>
+      <nav class="sidebar-nav" aria-label="sidebar">
+              <ul>
+        <li data-title="Workflow" data-content="We’ll normally create an advisory as a result of a plugin inspection where we
+were able to quickly prove that the plugin is vulnerable. We may also do so as a
+result of issues found in a pen test.The steps for progressing an Advisory are:
+  Check for existing advisories
+  Write up an advisory
+  Report the advisory to the plugin author
+  Notify the WordPress plugin admins (only in special circumstances)
+  (at a later date) Publish the advisory
+  Request a CVE
+The progress of advisories inspections is tracked alongside inspections using
+the
+inspections Trello board">
+          <a href="#workflow" data-target="workflow">Workflow</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Check for existing advisories" data-content="Pluginscan includes a report on vulnerabilities, based on the API exposed by the
+WPScan Vulnerability DatabaseIt’s important that we avoid publishing advisories that have already been
+reported by someone else.">
+          <a href="#check-for-existing-advisories" data-target="check-for-existing-advisories">Check for existing advisories</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Writing up Advisories" data-content="Naming the advisoryTitles should be in the following format:
+  [Vulnerability Type] in [Plugin Name] allows [User Type] to [Do Bad Things]
+
+  XSS should always say whether it’s stored or reflected
+Here are some Harry-approved examples:
+  Arbitrary Code Execution in NextGEN Gallery allows privileged users to run php
+  CSRF and stored XSS in WordPress Content Slide allow an attacker to have full
+admin privileges
+">
+          <a href="#writing-up-advisories" data-target="writing-up-advisories">Writing up Advisories</a>
+                <ul>
+        <li data-title="Naming the advisory" data-content="Titles should be in the following format:
+  [Vulnerability Type] in [Plugin Name] allows [User Type] to [Do Bad Things]
+
+  XSS should always say whether it’s stored or reflected
+Here are some Harry-approved examples:
+  Arbitrary Code Execution in NextGEN Gallery allows privileged users to run php
+  CSRF and stored XSS in WordPress Content Slide allow an attacker to have full
+admin privileges
+">
+          <a href="#naming-the-advisory" data-target="naming-the-advisory">Naming the advisory</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="CSRF/XSS:" data-content="Title:Reflected XSS in [plugin name] allows an unauthenticated attacker to do almost
+anything an admin canDescription:
+  An attacker able to convince an admin to visit a link of their choosing is
+able to execute arbitrary JavaScript
+
+  …the attacker can then use JavaScript to perform almost any action an admin
+can take (including creating new users, executing arbitrary php through the
+theme editor or exploiting vulnerabilities in WordPress or other plugins which
+normally require the user to be authenticated as an admin).”
+or maybe:
+  If an attacker is able to convince a logged-in admin user to follow a link
+(phishing emails can be made to look very convincing), then …
+Proof of concept:
+  If a logged-in administrator user clicks the submit button on this form, a
+JavaScript alert will display on {{A SPECIFIC PAGE}} (In a real attack the
+form can be made to auto-submit using JavaScript).”
+">
+          <a href="#csrfxss" data-target="csrfxss">CSRF/XSS:</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Unserialize" data-content="Title:Unserialize vulnerability in [plugin name] allows an attacker to run code on the
+serverDescription:If there are classes with methods like __destruct() that have certain
+properties, the attacker can …">
+          <a href="#unserialize" data-target="unserialize">Unserialize</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Mitigations" data-content="
+  Disable the plugin until a new version is released that fixes this bug
+">
+          <a href="#mitigations" data-target="mitigations">Mitigations</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="CVSS Scores" data-content="
+  Need to be considered in isolation: e.g. if it’s merely an enabler of other
+bad stuff then only consider the impact on e.g. integrity
+  CSRF/XSS vulns (i.e. get a logged-in admin to click a link) are Access
+Complexity: medium.
+">
+          <a href="#cvss-scores" data-target="cvss-scores">CVSS Scores</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Reporting an advisory" data-content="In order to publish advisories responsibly there are a number of steps which
+must be followed:
+  Ensure you’re happy with the text of the findings and the title (see
+    previous sections)
+  Ensure that the mitigations section says something like ‘Disable the
+    plugin until a new version is released that fixes this bug’
+  Ensure that the ‘Timeline’ section includes the date that the
+    vulnerability was discovered
+  Publish the advisory privately (Publish > Visibility > Edit) - Make sure
+    it doesn’t get tweeted!
+  Publish the associated inspection privately in the same way
+Note:
+  The format of timeline entries should be YYYY-MM-DD: Message, e.g.
+2013-08-09: Discovered
+">
+          <a href="#reporting-an-advisory" data-target="reporting-an-advisory">Reporting an advisory</a>
+                <ul>
+        <li data-title="Notify the plugin Author" data-content="Note:In extreme cases where the advisory will have a significant impact we may need
+to request an encrypted email connection for these communications. In all other
+cases, normal email is fine.
+  On the (privately) published page, under “Text version for reports” click
+    the “Click for a blank email with the right subject” link
+  Copy the email text from “Text version for reports”
+  Find contact details for the plugin author
+  Add a humanising intro and send to the plugin author
+  Add a note to the timeline, mentioning the method - e.g. 2014-01-02:
+    Reported to vendor by email
+  At the bottom of the page, set the status to “Reported”
+As an example of a humanising intro:
+  Hello We’ve found a security vulnerability in Version 2.8.2 of the Advanced
+Access Manager plugin – please see the details below. After you’ve had a
+chance to investigate could you please let us know a timeline for a fix – our
+disclosure policy is linked at the bottom of the report. Best regards Duncan
+">
+          <a href="#notify-the-plugin-author" data-target="notify-the-plugin-author">Notify the plugin Author</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Notify the WordPress plugin admins" data-content="There are two scenarios in which the WordPress plugin admins
+(plugins@wordpress.org) should be contacted:
+  If we really couldn’t get in touch with the plugin dev
+  If the vulnerability is really serious and the plugin is popular (say over
+100,000 downloads), so needs to be taken down ASAP
+Their policy is this:
+  Every attempt to contact the developer directly should be made BEFORE you
+reported the plugin to us. Since our policy is to close the plugin (preventing
+new downloads) until it’s fixed, you may not be alerted until the plugin is
+updated.
+
+  Hit the “WP Plugins” button under “Report emails”
+  Add a note to the timeline - e.g. 2014-01-02: Reported to WP Plugins
+">
+          <a href="#notify-the-wordpress-plugin-admins" data-target="notify-the-wordpress-plugin-admins">Notify the WordPress plugin admins</a>
+                <ul>
+        <li data-title=":rotating_light: IMPORTANT :rotating_light:" data-content="If we couldn’t get in touch with the plugin author then WP Org may be able to
+contact them on our behalf, BUT we shouldn’t expect them to feed back any
+information to us, or even to confirm that they have successfully contacted the
+author (they are insanely busy).Therefore we shouldn’t say things like “No response from WP Org” (because we
+shouldn’t expect one) or “No response from author to WP Org” (because we don’t
+know that’s the case).">
+          <a href="#rotating_light-important-rotating_light" data-target="rotating_light-important-rotating_light">:rotating_light: IMPORTANT :rotating_light:</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Publishing an Advisory" data-content="There are two reasons that we will publish an advisory:
+  The plugin author lets us know that they’ve fixed the issue and released a fix
+  We couldn’t contact the plugin author, or they didn’t respond within the time
+period defined in our
+disclosure policy
+If an author has at any point been in touch and shown willingness to cooperate
+then we should give them the benefit of the doubt and make several attempts to
+get in touch.">
+          <a href="#publishing-an-advisory" data-target="publishing-an-advisory">Publishing an Advisory</a>
+                <ul>
+        <li data-title="Preparing advisories for publication" data-content="If the issue is fixed:
+  Ensure that there’s a note in the timeline of when the vendor first
+    replied.
+  Update the timeline as appropriate, e.g. 2014-01-02: Vendor reported issue
+    fixed in version 1.2.3
+  Update the timeline as appropriate, e.g. 2014-01-05: Advisory published
+  Mark the advisory from ‘Reported’ to ‘Fixed’
+  Update the ‘mitigation’ section to say ‘Upgrade to version X or later’
+If the issue is NOT fixed:
+  Update the timeline as appropriate, e.g. 2014-01-02: Vendor could not be
+    contacted
+  Update the timeline as appropriate, e.g. 2014-01-05: Published
+  Leave the status as ‘Reported’
+  Update the ‘mitigation’ section to say ‘Disable: the plugin has been
+    removed from the plugins directory and no fixed version is known.’
+If the plugin was removed from the directory:
+  Update the timeline as appropriate, e.g. 2014-01-02: Plugin has been
+    removed from the WordPress directory
+  Update the timeline as appropriate, e.g. 2014-01-05: Published
+  Leave the status as ‘Reported’
+  Update the ‘mitigation’ section to say ‘Disable: no fixed version is
+    known.’
+">
+          <a href="#preparing-advisories-for-publication" data-target="preparing-advisories-for-publication">Preparing advisories for publication</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Publishing the advisory and associated inspection" data-content="
+  Set the Tweet status to ‘Tweet’
+  Amend the published date to today (otherwise it will show with the
+    privately published date)
+  Publish the advisory
+  While logged in, view the published advisory and hit the Full Disclosure,
+    WP Scan and dxw WP Security buttons
+Once the advisory has been published the associated inspection can also be
+published:
+  Add a link to the advisory
+  Set the Tweet status to ‘Do not tweet’
+  Amend the published date to today (otherwise it will show with the
+    privately published date)
+  Publish the inspection
+Once it’s published we can alert upstream:
+  Email the developer:
+    
+      thank them for the fix
+      include a link to the advisory
+      suggest that they add the link to the changelog
+    
+  
+">
+          <a href="#publishing-the-advisory-and-associated-inspection" data-target="publishing-the-advisory-and-associated-inspection">Publishing the advisory and associated inspection</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Request a CVE" data-content="Note that most CVEs cannot be requested before publication due to the rules of
+the Distributed Weakness Filing project. Vulnerabilities in plugins made by
+WordPress itself follow different rules as they’re covered by MITRE.
+  Visit https://iwantacve.org and fill out the form
+  Add a note to the timeline - e.g. 2014-01-02: Requested CVE
+">
+          <a href="#request-a-cve" data-target="request-a-cve">Request a CVE</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+
+      </nav>
+    </aside>
+    <main>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <div style="overflow: auto;">
+            <p style="float: right;">
+              <a
+                href="https://github.com/dxw/playbook/edit/master/guides/plugin-advisories.md"
+                >Edit document</a
+              >
+            </p>
+          </div>
+          <h1>GovPress plugin Advisories</h1>
+          <h2 id="workflow">Workflow</h2>
+
+<p>We’ll normally create an advisory as a result of a plugin inspection where we
+were able to quickly prove that the plugin is vulnerable. We may also do so as a
+result of issues found in a pen test.</p>
+
+<p>The steps for progressing an Advisory are:</p>
+
+<ol>
+  <li>Check for existing advisories</li>
+  <li>Write up an advisory</li>
+  <li>Report the advisory to the plugin author</li>
+  <li>Notify the WordPress plugin admins (only in special circumstances)</li>
+  <li>(at a later date) Publish the advisory</li>
+  <li>Request a CVE</li>
+</ol>
+
+<p>The progress of advisories inspections is tracked alongside inspections using
+the
+<a href="https://trello.com/b/sN42avTZ/dxwsec-inspections-and-advisories">inspections Trello board</a></p>
+
+<h2 id="check-for-existing-advisories">Check for existing advisories</h2>
+
+<p>Pluginscan includes a report on vulnerabilities, based on the API exposed by the
+<a href="https://wpvulndb.com/">WPScan Vulnerability Database</a></p>
+
+<p>It’s important that we avoid publishing advisories that have already been
+reported by someone else.</p>
+
+<h2 id="writing-up-advisories">Writing up Advisories</h2>
+
+<h3 id="naming-the-advisory">Naming the advisory</h3>
+
+<p>Titles should be in the following format:</p>
+
+<blockquote>
+  <p>[Vulnerability Type] in [Plugin Name] allows [User Type] to [Do Bad Things]</p>
+</blockquote>
+
+<ul>
+  <li>XSS should always say whether it’s stored or reflected</li>
+</ul>
+
+<p>Here are some Harry-approved examples:</p>
+
+<ul>
+  <li>Arbitrary Code Execution in NextGEN Gallery allows privileged users to run php</li>
+  <li>CSRF and stored XSS in WordPress Content Slide allow an attacker to have full
+admin privileges</li>
+</ul>
+
+<h3 id="csrfxss">CSRF/XSS:</h3>
+
+<p>Title:</p>
+
+<p>Reflected XSS in [plugin name] allows an unauthenticated attacker to do almost
+anything an admin can</p>
+
+<p>Description:</p>
+
+<blockquote>
+  <p>An attacker able to convince an admin to visit a link of their choosing is
+able to execute arbitrary JavaScript</p>
+
+  <p>…the attacker can then use JavaScript to perform almost any action an admin
+can take (including creating new users, executing arbitrary php through the
+theme editor or exploiting vulnerabilities in WordPress or other plugins which
+normally require the user to be authenticated as an admin).”</p>
+</blockquote>
+
+<p>or maybe:</p>
+
+<blockquote>
+  <p>If an attacker is able to convince a logged-in admin user to follow a link
+(phishing emails can be made to look very convincing), then …</p>
+</blockquote>
+
+<p>Proof of concept:</p>
+
+<blockquote>
+  <p>If a logged-in administrator user clicks the submit button on this form, a
+JavaScript alert will display on {{A SPECIFIC PAGE}} (In a real attack the
+form can be made to auto-submit using JavaScript).”</p>
+</blockquote>
+
+<h3 id="unserialize">Unserialize</h3>
+
+<p>Title:</p>
+
+<p>Unserialize vulnerability in [plugin name] allows an attacker to run code on the
+server</p>
+
+<p>Description:</p>
+
+<p>If there are classes with methods like <code class="language-plaintext highlighter-rouge">__destruct()</code> that have certain
+properties, the attacker can …</p>
+
+<h3 id="mitigations">Mitigations</h3>
+
+<ul>
+  <li>Disable the plugin until a new version is released that fixes this bug</li>
+</ul>
+
+<h3 id="cvss-scores">CVSS Scores</h3>
+
+<ul>
+  <li>Need to be considered in isolation: e.g. if it’s merely an enabler of other
+bad stuff then only consider the impact on e.g. integrity</li>
+  <li>CSRF/XSS vulns (i.e. get a logged-in admin to click a link) are Access
+Complexity: medium.</li>
+</ul>
+
+<h2 id="reporting-an-advisory">Reporting an advisory</h2>
+
+<p>In order to publish advisories responsibly there are a number of steps which
+must be followed:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Ensure you’re happy with the text of the findings and the title (see
+    previous sections)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Ensure that the mitigations section says something like ‘Disable the
+    plugin until a new version is released that fixes this bug’</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Ensure that the ‘Timeline’ section includes the date that the
+    vulnerability was discovered</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Publish the advisory privately (Publish &gt; Visibility &gt; Edit) - Make sure
+    it doesn’t get tweeted!</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Publish the associated inspection privately in the same way</li>
+</ul>
+
+<p>Note:</p>
+
+<ul>
+  <li>The format of timeline entries should be <code class="language-plaintext highlighter-rouge">YYYY-MM-DD: Message</code>, e.g.
+<code class="language-plaintext highlighter-rouge">2013-08-09: Discovered</code></li>
+</ul>
+
+<h3 id="notify-the-plugin-author">Notify the plugin Author</h3>
+
+<p>Note:</p>
+
+<p>In extreme cases where the advisory will have a significant impact we may need
+to request an encrypted email connection for these communications. In all other
+cases, normal email is fine.</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />On the (privately) published page, under “Text version for reports” click
+    the “Click for a blank email with the right subject” link</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Copy the email text from “Text version for reports”</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Find contact details for the plugin author</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a humanising intro and send to the plugin author</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a note to the timeline, mentioning the method - e.g. 2014-01-02:
+    Reported to vendor by email</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />At the bottom of the page, set the status to “Reported”</li>
+</ul>
+
+<p>As an example of a humanising intro:</p>
+
+<blockquote>
+  <p>Hello We’ve found a security vulnerability in Version 2.8.2 of the Advanced
+Access Manager plugin – please see the details below. After you’ve had a
+chance to investigate could you please let us know a timeline for a fix – our
+disclosure policy is linked at the bottom of the report. Best regards Duncan</p>
+</blockquote>
+
+<h2 id="notify-the-wordpress-plugin-admins">Notify the WordPress plugin admins</h2>
+
+<p>There are two scenarios in which the WordPress plugin admins
+(plugins@wordpress.org) should be contacted:</p>
+
+<ol>
+  <li>If we really couldn’t get in touch with the plugin dev</li>
+  <li>If the vulnerability is really serious and the plugin is popular (say over
+100,000 downloads), so needs to be taken down ASAP</li>
+</ol>
+
+<p>Their policy is this:</p>
+
+<blockquote>
+  <p>Every attempt to contact the developer directly should be made BEFORE you
+reported the plugin to us. Since our policy is to close the plugin (preventing
+new downloads) until it’s fixed, you may not be alerted until the plugin is
+updated.</p>
+</blockquote>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Hit the “WP Plugins” button under “Report emails”</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a note to the timeline - e.g. 2014-01-02: Reported to WP Plugins</li>
+</ul>
+
+<h3 id="rotating_light-important-rotating_light">:rotating_light: IMPORTANT :rotating_light:</h3>
+
+<p>If we couldn’t get in touch with the plugin author then WP Org may be able to
+contact them on our behalf, BUT we shouldn’t expect them to feed back any
+information to us, or even to confirm that they have successfully contacted the
+author (they are insanely busy).</p>
+
+<p>Therefore we shouldn’t say things like “No response from WP Org” (because we
+shouldn’t expect one) or “No response from author to WP Org” (because we don’t
+know that’s the case).</p>
+
+<h2 id="publishing-an-advisory">Publishing an Advisory</h2>
+
+<p>There are two reasons that we will publish an advisory:</p>
+
+<ul>
+  <li>The plugin author lets us know that they’ve fixed the issue and released a fix</li>
+  <li>We couldn’t contact the plugin author, or they didn’t respond within the time
+period defined in our
+<a href="https://security.dxw.com/disclosure/">disclosure policy</a></li>
+</ul>
+
+<p>If an author has at any point been in touch and shown willingness to cooperate
+then we should give them the benefit of the doubt and make several attempts to
+get in touch.</p>
+
+<h3 id="preparing-advisories-for-publication">Preparing advisories for publication</h3>
+
+<p>If the issue is fixed:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Ensure that there’s a note in the timeline of when the vendor first
+    replied.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the timeline as appropriate, e.g. 2014-01-02: Vendor reported issue
+    fixed in version 1.2.3</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the timeline as appropriate, e.g. 2014-01-05: Advisory published</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mark the advisory from ‘Reported’ to ‘Fixed’</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the ‘mitigation’ section to say ‘Upgrade to version X or later’</li>
+</ul>
+
+<p>If the issue is NOT fixed:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the timeline as appropriate, e.g. 2014-01-02: Vendor could not be
+    contacted</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the timeline as appropriate, e.g. 2014-01-05: Published</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Leave the status as ‘Reported’</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the ‘mitigation’ section to say ‘Disable: the plugin has been
+    removed from the plugins directory and no fixed version is known.’</li>
+</ul>
+
+<p>If the plugin was removed from the directory:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the timeline as appropriate, e.g. 2014-01-02: Plugin has been
+    removed from the WordPress directory</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the timeline as appropriate, e.g. 2014-01-05: Published</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Leave the status as ‘Reported’</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update the ‘mitigation’ section to say ‘Disable: no fixed version is
+    known.’</li>
+</ul>
+
+<h3 id="publishing-the-advisory-and-associated-inspection">Publishing the advisory and associated inspection</h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Set the Tweet status to ‘Tweet’</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Amend the published date to today (otherwise it will show with the
+    privately published date)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Publish the advisory</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />While logged in, view the published advisory and hit the Full Disclosure,
+    WP Scan and dxw WP Security buttons</li>
+</ul>
+
+<p>Once the advisory has been published the associated inspection can also be
+published:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a link to the advisory</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Set the Tweet status to ‘Do not tweet’</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Amend the published date to today (otherwise it will show with the
+    privately published date)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Publish the inspection</li>
+</ul>
+
+<p>Once it’s published we can alert upstream:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Email the developer:
+    <ul>
+      <li>thank them for the fix</li>
+      <li>include a link to the advisory</li>
+      <li>suggest that they add the link to the changelog</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="request-a-cve">Request a CVE</h3>
+
+<p>Note that most CVEs cannot be requested before publication due to the rules of
+the Distributed Weakness Filing project. Vulnerabilities in plugins made by
+WordPress itself follow different rules as they’re covered by MITRE.</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Visit <a href="https://iwantacve.org">https://iwantacve.org</a> and fill out the form</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a note to the timeline - e.g. 2014-01-02: Requested CVE</li>
+</ul>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <button class="sidebar-toggle" aria-label="Toggle Navigation">
+        <div class="sidebar-toggle-button">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </footer>
+    <script type="text/javascript" src="/dist/main.js"></script>
+  </body>
+</html>

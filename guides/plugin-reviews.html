@@ -1,0 +1,312 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dxw Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+
+  <body class="ready sticky">
+    <a class="skip" id="skip-to-content" href="#main">Skip to content</a>
+    <nav class="app-nav no-badge" aria-label="Main">
+      
+
+<ul>
+  <li><a href="/">Playbook</a></li>
+  <li>
+    <a href="/guides">Guides</a>
+    <ul>
+      
+      <li><a href="/guides/agile-delivery-phases.html">Agile delivery phases</a></li>
+      
+      <li><a href="/guides/card-sort.html">Card sorting</a></li>
+      
+      <li><a href="/guides/claiming-expenses.html">Claiming expenses</a></li>
+      
+      <li><a href="/guides/contributing.html">Contributing to the Playbook</a></li>
+      
+      <li><a href="/guides/daily-standups.html">Daily standups</a></li>
+      
+      <li><a href="/guides/design-career-progression-framework.html">Design career progression framework</a></li>
+      
+      <li><a href="/guides/development-workflow.html">Development workflow</a></li>
+      
+      <li><a href="/guides/plugin-advisories.html">GovPress plugin Advisories</a></li>
+      
+      <li><a href="/guides/">Guides</a></li>
+      
+      <li><a href="/guides/how-we-do-pitches.html">How we do pitches</a></li>
+      
+      <li><a href="/guides/how-we-do-user-research.html">How we do user research</a></li>
+      
+      <li><a href="/guides/managing.html">Managing the Playbook</a></li>
+      
+      <li><a href="/guides/office-accessibility.html">Office accessibility</a></li>
+      
+      <li><a href="/guides/week-notes.html">Project weeknotes</a></li>
+      
+      <li><a href="/guides/running-a-discovery-kick-off-workshop.html">Running a discovery kick-off workshop</a></li>
+      
+      <li><a href="/guides/running-a-roadmapping-workshop.html">Running a roadmapping workshop</a></li>
+      
+      <li><a href="/guides/service-design-at-dxw.html">Service Design approach</a></li>
+      
+      <li><a href="/guides/setting-up-a-new-project.html">Setting up a new project</a></li>
+      
+      <li><a href="/guides/show-and-tells.html">Show and tells</a></li>
+      
+      <li><a href="/guides/sprint-planning.html">Sprint Planning</a></li>
+      
+      <li><a href="/guides/support-and-on-call.html">Support and on call</a></li>
+      
+      <li><a href="/guides/team-and-project-scheduling.html">Team and project scheduling</a></li>
+      
+      <li><a href="/guides/team-changes-and-handovers.html">Team changes and handovers</a></li>
+      
+      <li><a href="/guides/tone-of-voice.html">Tone of voice</a></li>
+      
+      <li><a href="/guides/moving-a-repo-to-github.html">Transferring a repo from git.dxw.net to github</a></li>
+      
+      <li><a href="/guides/web-analytics.html">Web analytics</a></li>
+      
+      <li><a href="/guides/working-remotely.html">Working remotely</a></li>
+      
+      <li><a href="/guides/wrapping-up-a-project.html">Wrapping up a project</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+<div class="logo">
+  <a href="/" title="Back to Playbook home page">
+    <img src="/dist/dmark.png" alt="" width="32" height="32" />
+  </a>
+</div>
+
+    </nav>
+    <aside class="sidebar">
+      <div class="search" role="search">
+        <div class="input-wrap">
+          <input
+            type="search"
+            value=""
+            aria-label="Search text"
+            placeholder="Type to search"
+          />
+          <div class="clear-button">
+            <svg width="26" height="24">
+              <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,8.25,15.75,15.75"
+              ></path>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,15.75,15.75,8.25"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="results-panel"></div>
+      </div>
+      <h1 class="app-name">
+        <a class="app-name-link" data-nosearch="" href="/">dxw’s Playbook</a>
+      </h1>
+      <nav class="sidebar-nav" aria-label="sidebar">
+              <ul>
+        <li data-title="Workflow" data-content="Requests for plugin inspections will normally be received as a ticket from the
+client. The high-level process is as follows (each step is covered in a section
+below):
+  Check for existing inspections
+  Add a card to the Trello board
+  Check the plugin for issues using
+pluginscan
+  Write up an inspection report in security.dxw.com. If the plugin does not
+appear to be vulnerable, this can be published immediately
+  If the plugin appears to be vulnerable, spend a short amount of time
+attempting to prove it.
+If we aren’t able to prove the vulnerability then we should publish the
+inspection as ‘potentially unsafe’ and leave it at that: it’s important that we
+don’t spend too much time on these.If we were able to prove that the plugin is vulnerable then we shouldn’t publish
+the inspection yet and instead write up an Advisory. This is covered in a
+separate guide.">
+          <a href="#workflow" data-target="workflow">Workflow</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Checking for Inspections" data-content="Log in to dxw advisories and search for any
+existing inspections for this plugin. Bear in mind that some of these may be
+draft or privately published.
+  If we have inspected the latest version of the plugin, no further action is
+required.
+  If we have inspected a much older version of the plugin, a new review is
+necessary
+  For anything in the middle, the decision to do a new review should take into
+account:
+    
+      Previous poor reviews or advisories
+      The difference in version numbers (bearing in mind that many WordPress
+plugins don’t follow semver)
+      The date of the last inspection
+    
+  
+">
+          <a href="#checking-for-inspections" data-target="checking-for-inspections">Checking for Inspections</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="The Trello board" data-content="The progress of plugin inspections is tracked using the
+inspections Trello board.
+Although this contains a backlog of pending inspections, the order these are
+worked through should be based on the associated tickets, or on Fridays, in
+discussion with DMs.">
+          <a href="#the-trello-board" data-target="the-trello-board">The Trello board</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Inspecting the plugin" data-content="Most plugins can be downloaded from the
+directory. Premium plugins may have to
+be purchased (discuss with DMs).We use a tool called Pluginscan for
+inspections. It does not have a full understanding of the code - instead it
+looks for specific patterns and function names which may indicate that the code
+is unsafe.A plugin inspection mostly involves checking these pattern matches to see if
+they represent real issues.">
+          <a href="#inspecting-the-plugin" data-target="inspecting-the-plugin">Inspecting the plugin</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Writing up Inspections" data-content="If the plugin is large (around 15,000 or more lines of code), start with a line
+like this:
+  At over 26,000 lines of PHP this is a very large plugin, which makes it
+difficult to thoroughly assess
+">
+          <a href="#writing-up-inspections" data-target="writing-up-inspections">Writing up Inspections</a>
+                <ul>
+        <li data-title="Recommendations" data-content="If a plugin has a vulnerability, but I need to be authenticated in order to
+exploit the vulnerability it’s probably ‘Use With Caution’.">
+          <a href="#recommendations" data-target="recommendations">Recommendations</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+
+      </nav>
+    </aside>
+    <main>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <div style="overflow: auto;">
+            <p style="float: right;">
+              <a
+                href="https://github.com/dxw/playbook/edit/master/guides/plugin-reviews.md"
+                >Edit document</a
+              >
+            </p>
+          </div>
+          <h1>GovPress plugin reviews</h1>
+          <h2 id="workflow">Workflow</h2>
+
+<p>Requests for plugin inspections will normally be received as a ticket from the
+client. The high-level process is as follows (each step is covered in a section
+below):</p>
+
+<ol>
+  <li>Check for existing inspections</li>
+  <li>Add a card to the Trello board</li>
+  <li>Check the plugin for issues using
+<a href="https://git.govpress.com/dxw/pluginscan">pluginscan</a></li>
+  <li>Write up an inspection report in security.dxw.com. If the plugin does not
+appear to be vulnerable, this can be published immediately</li>
+  <li>If the plugin appears to be vulnerable, spend a short amount of time
+attempting to prove it.</li>
+</ol>
+
+<p>If we aren’t able to prove the vulnerability then we should publish the
+inspection as ‘potentially unsafe’ and leave it at that: it’s important that we
+don’t spend too much time on these.</p>
+
+<p>If we were able to prove that the plugin is vulnerable then we shouldn’t publish
+the inspection yet and instead write up an Advisory. This is covered in a
+separate guide.</p>
+
+<h2 id="checking-for-inspections">Checking for Inspections</h2>
+
+<p>Log in to <a href="https://advisories.dxw.com/">dxw advisories</a> and search for any
+existing inspections for this plugin. Bear in mind that some of these may be
+draft or privately published.</p>
+
+<ul>
+  <li>If we have inspected the latest version of the plugin, no further action is
+required.</li>
+  <li>If we have inspected a much older version of the plugin, a new review is
+necessary</li>
+  <li>For anything in the middle, the decision to do a new review should take into
+account:
+    <ul>
+      <li>Previous poor reviews or advisories</li>
+      <li>The difference in version numbers (bearing in mind that many WordPress
+plugins don’t follow semver)</li>
+      <li>The date of the last inspection</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="the-trello-board">The Trello board</h2>
+
+<p>The progress of plugin inspections is tracked using the
+<a href="https://trello.com/b/sN42avTZ/dxwsec-inspections-and-advisories">inspections Trello board</a>.
+Although this contains a backlog of pending inspections, the order these are
+worked through should be based on the associated tickets, or on Fridays, in
+discussion with DMs.</p>
+
+<h2 id="inspecting-the-plugin">Inspecting the plugin</h2>
+
+<p>Most plugins can be downloaded from the
+<a href="https://en-gb.wordpress.org/plugins/">directory</a>. Premium plugins may have to
+be purchased (discuss with DMs).</p>
+
+<p>We use a tool called <a href="https://git.govpress.com/dxw/pluginscan">Pluginscan</a> for
+inspections. It does not have a full understanding of the code - instead it
+looks for specific patterns and function names which may indicate that the code
+is unsafe.</p>
+
+<p>A plugin inspection mostly involves checking these pattern matches to see if
+they represent real issues.</p>
+
+<h2 id="writing-up-inspections">Writing up Inspections</h2>
+
+<p>If the plugin is large (around 15,000 or more lines of code), start with a line
+like this:</p>
+
+<blockquote>
+  <p>At over 26,000 lines of PHP this is a very large plugin, which makes it
+difficult to thoroughly assess</p>
+</blockquote>
+
+<h3 id="recommendations">Recommendations</h3>
+
+<p>If a plugin has a vulnerability, but I need to be authenticated in order to
+exploit the vulnerability it’s probably ‘Use With Caution’.</p>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <button class="sidebar-toggle" aria-label="Toggle Navigation">
+        <div class="sidebar-toggle-button">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </footer>
+    <script type="text/javascript" src="/dist/main.js"></script>
+  </body>
+</html>

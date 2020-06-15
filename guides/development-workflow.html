@@ -1,0 +1,1268 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dxw Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+
+  <body class="ready sticky">
+    <a class="skip" id="skip-to-content" href="#main">Skip to content</a>
+    <nav class="app-nav no-badge" aria-label="Main">
+      
+
+<ul>
+  <li><a href="/">Playbook</a></li>
+  <li>
+    <a href="/guides">Guides</a>
+    <ul>
+      
+      <li><a href="/guides/agile-delivery-phases.html">Agile delivery phases</a></li>
+      
+      <li><a href="/guides/card-sort.html">Card sorting</a></li>
+      
+      <li><a href="/guides/claiming-expenses.html">Claiming expenses</a></li>
+      
+      <li><a href="/guides/contributing.html">Contributing to the Playbook</a></li>
+      
+      <li><a href="/guides/daily-standups.html">Daily standups</a></li>
+      
+      <li><a href="/guides/design-career-progression-framework.html">Design career progression framework</a></li>
+      
+      <li><a href="/guides/plugin-advisories.html">GovPress plugin Advisories</a></li>
+      
+      <li><a href="/guides/plugin-reviews.html">GovPress plugin reviews</a></li>
+      
+      <li><a href="/guides/">Guides</a></li>
+      
+      <li><a href="/guides/how-we-do-pitches.html">How we do pitches</a></li>
+      
+      <li><a href="/guides/how-we-do-user-research.html">How we do user research</a></li>
+      
+      <li><a href="/guides/managing.html">Managing the Playbook</a></li>
+      
+      <li><a href="/guides/office-accessibility.html">Office accessibility</a></li>
+      
+      <li><a href="/guides/week-notes.html">Project weeknotes</a></li>
+      
+      <li><a href="/guides/running-a-discovery-kick-off-workshop.html">Running a discovery kick-off workshop</a></li>
+      
+      <li><a href="/guides/running-a-roadmapping-workshop.html">Running a roadmapping workshop</a></li>
+      
+      <li><a href="/guides/service-design-at-dxw.html">Service Design approach</a></li>
+      
+      <li><a href="/guides/setting-up-a-new-project.html">Setting up a new project</a></li>
+      
+      <li><a href="/guides/show-and-tells.html">Show and tells</a></li>
+      
+      <li><a href="/guides/sprint-planning.html">Sprint Planning</a></li>
+      
+      <li><a href="/guides/support-and-on-call.html">Support and on call</a></li>
+      
+      <li><a href="/guides/team-and-project-scheduling.html">Team and project scheduling</a></li>
+      
+      <li><a href="/guides/team-changes-and-handovers.html">Team changes and handovers</a></li>
+      
+      <li><a href="/guides/tone-of-voice.html">Tone of voice</a></li>
+      
+      <li><a href="/guides/moving-a-repo-to-github.html">Transferring a repo from git.dxw.net to github</a></li>
+      
+      <li><a href="/guides/web-analytics.html">Web analytics</a></li>
+      
+      <li><a href="/guides/working-remotely.html">Working remotely</a></li>
+      
+      <li><a href="/guides/wrapping-up-a-project.html">Wrapping up a project</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+<div class="logo">
+  <a href="/" title="Back to Playbook home page">
+    <img src="/dist/dmark.png" alt="" width="32" height="32" />
+  </a>
+</div>
+
+    </nav>
+    <aside class="sidebar">
+      <div class="search" role="search">
+        <div class="input-wrap">
+          <input
+            type="search"
+            value=""
+            aria-label="Search text"
+            placeholder="Type to search"
+          />
+          <div class="clear-button">
+            <svg width="26" height="24">
+              <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,8.25,15.75,15.75"
+              ></path>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,15.75,15.75,8.25"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="results-panel"></div>
+      </div>
+      <h1 class="app-name">
+        <a class="app-name-link" data-nosearch="" href="/">dxw’s Playbook</a>
+      </h1>
+      <nav class="sidebar-nav" aria-label="sidebar">
+              <ul>
+        <li data-title="Introduction" data-content="Development principlesAs part of regular retrospectives we evolve our principles by identifying what
+works well. When we try something that helps with a particular pattern of
+problem the team can acknowledge the benefits it brings and introduce it as a
+principle.">
+          <a href="#introduction" data-target="introduction">Introduction</a>
+                <ul>
+        <li data-title="Development principles" data-content="As part of regular retrospectives we evolve our principles by identifying what
+works well. When we try something that helps with a particular pattern of
+problem the team can acknowledge the benefits it brings and introduce it as a
+principle.">
+          <a href="#development-principles" data-target="development-principles">Development principles</a>
+                <ul>
+        <li data-title="Communicate frequently" data-content="
+  space to learn from each other
+  make shared decisions
+  prevent duplication
+  solve problems quicker
+">
+          <a href="#communicate-frequently" data-target="communicate-frequently">Communicate frequently</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Two pairs of eyes" data-content="All code we write needs be reviewed by another developer. We hope that doing
+this will mean we:
+  ship better quality code
+  get the opportunity to learn new skills
+  increase the shared knowledge of our products
+">
+          <a href="#two-pairs-of-eyes" data-target="two-pairs-of-eyes">Two pairs of eyes</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Everything is tracked" data-content="All code we write is represented in Trello (or another ticketing system as
+required by the client) so that:
+  the client can easily visualise how we’re doing and what needs their attention
+  the team can see and react to bottle necks
+  delivery managers can see what cards have been lingering
+  developers can be confident what they are deploying
+">
+          <a href="#everything-is-tracked" data-target="everything-is-tracked">Everything is tracked</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Own your code" data-content="Having the opportunity to see a piece of work through to completion is a great
+way to for developers to grow. To encourage this we ask reviewers to leave their
+feedback, ask questions and discuss the code but not to make any changes without
+the okay from the author. This will hopefully allow us to:
+  learn from our mistakes
+  create personal achievements from seeing work through to production
+">
+          <a href="#own-your-code" data-target="own-your-code">Own your code</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Do the smallest amount of good work" data-content="We aspire to regularly ship
+good code and deliver it to
+the users as often as possible. Doing so efficiently requires a balanced
+approach to development.Good signs:
+  the code is easy to read and understand
+  the code didn’t take too long to write
+  the code is relatively easy to change
+Bad signs:
+  spending too much time over engineering (gold plating) our code
+  delivering too quickly at the cost of any code quality
+">
+          <a href="#do-the-smallest-amount-of-good-work" data-target="do-the-smallest-amount-of-good-work">Do the smallest amount of good work</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="The twenty-minute rules" data-content="
+  being helpful is one of our values and this extends to development. If after
+spending 20 minutes on a problem you haven’t made progress, invoke the
+twenty-minute rule with another developer and get their advice
+  discussions that go on for twenty-minutes or more can be a time sink. If an
+agreement on how to progress cannot be found after 20 minutes, mentioning
+this rule provides a pre-agreed way to acknowledge the problem and get to a
+resolution as quickly as possible. Rate your concern for the issue out of 10
+and a next step should naturally emerge
+">
+          <a href="#the-twenty-minute-rules" data-target="the-twenty-minute-rules">The twenty-minute rules</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="The lifecycle of a story" data-content="Different projects have small variations to this process, but here are some
+general guidelines.">
+          <a href="#the-lifecycle-of-a-story" data-target="the-lifecycle-of-a-story">The lifecycle of a story</a>
+                <ul>
+        <li data-title="Start work on a new story" data-content="
+  assign yourself to the Trello card
+  move the card to Trello’s ‘In progress’ column
+  
+    make a new branch off of develop
+
+    git checkout -b <branch-name> origin/develop
+    
+  
+  meet the acceptance criteria
+  update the changelog
+  commit your code
+">
+          <a href="#start-work-on-a-new-story" data-target="start-work-on-a-new-story">Start work on a new story</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Submit your story for code review" data-content="
+  
+    push your branch to the remote repository
+
+    git push origin <branch-name>
+    
+  
+  create a pull request into the develop branch
+  link the Trello card to the new pull request, linking directly or by using
+the Trello
+power up
+  move the Trello card into the ‘Awaiting review column’
+">
+          <a href="#submit-your-story-for-code-review" data-target="submit-your-story-for-code-review">Submit your story for code review</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Reviewing another developer’s pull request" data-content="
+  move the Trello card into the ‘Under code review’ column
+  find and read the Trello card’s acceptance criteria
+  find and read through the pull request, carrying out a
+code review
+    
+      if it is ready:
+        
+          press the merge button
+          delete the leftover branch
+          move the Trello card into ‘Deployed to Staging’
+        
+      
+      if it’s not ready:
+        
+          leave feedback
+          mention the author so they’re aware
+        
+      
+    
+  
+">
+          <a href="#reviewing-another-developers-pull-request" data-target="reviewing-another-developers-pull-request">Reviewing another developer’s pull request</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Working on a support ticket" data-content="Support tickets can fall into two types of work flow depending on their
+severity.Most commonly tickets will simply fall into the same
+story process, where fixes will go through
+develop and Staging for review and acceptance.They can however be sometimes when there’s an emergency which requires a change
+to production ASAP. This is when we reach for a hotfix.">
+          <a href="#working-on-a-support-ticket" data-target="working-on-a-support-ticket">Working on a support ticket</a>
+                <ul>
+        <li data-title="Hotfix" data-content="We think of hotfixes in the same way as
+Wikipedia describes them:
+  a hotfix implies that the change may have been made quickly and outside normal
+development and testing processes
+and also
+  A hotfix is a change deemed critical enough that it cannot be held off until a
+regular content patch.
+An emergency for instance would be when:
+  production is unusable - users are directly affected
+  a serious vulnerability has been discovered and is currently exploitable
+">
+          <a href="#hotfix" data-target="hotfix">Hotfix</a>
+                <ul>
+        <li data-title="Issue a hotfix" data-content="When the decision to make a hotfix is made it’s important to communicate well.
+Involve the rest of the team at this point and discuss the plan of action,
+allowing delivery managers to communicate back to the client.This is the only time a branch should be based off of master instead of
+develop.
+  create a new card in Trello and move it to ‘In progress’
+  
+    create a new branch off of master
+
+    git checkout -b <branch-name> origin/master
+    
+  
+  commit the fix
+  make a pull request into master
+  move the Trello card into ‘Awaiting review’
+">
+          <a href="#issue-a-hotfix" data-target="issue-a-hotfix">Issue a hotfix</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Review and deploy a hotfix" data-content="
+  review the code
+  check the fix has been tested locally if possible
+  merge the pull request
+  
+    manually merge the pull request back into develop
+
+    git checkout develop
+git pull
+git merge origin/master
+git push
+    
+  
+  move the card on Trello into ‘Deployed to production’
+  update the changelog
+">
+          <a href="#review-and-deploy-a-hotfix" data-target="review-and-deploy-a-hotfix">Review and deploy a hotfix</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Deploying" data-content="Our approach is one of
+continuous delivery meaning
+we build, test and deploy as frequently as possible.We do this by using services such as Chef, TravisCI or GitHub Actions which are
+configured to listen for Git pushes and then initiate the correct deployment.">
+          <a href="#deploying" data-target="deploying">Deploying</a>
+                <ul>
+        <li data-title="Staging" data-content="Staging deployments are automatic and should be initiated when each pull request
+is merged. When you click merge the changes are immediately deployed to the
+Staging environment.Remember to move the card(s) along on Trello.">
+          <a href="#staging" data-target="staging">Staging</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Production" data-content="Production deployments are done by manually merging develop into master.
+Since everything on develop has been through a pull request with CI tests, we
+can be confident in the quality and stability.To deploy:
+  review what work is currently awaiting deployment by looking at Trello, if
+there are any unaccepted stories then you should hold off
+  update the changelog
+  
+    let the team know you’re deploying to Production
+
+    git fetch
+git checkout master
+git pull
+git merge origin/develop
+git push
+    
+  
+  verify the deployment has been successful
+  tag the merge commit with the version matching the
+changelog
+  update Trello with all the cards that have now been deployed
+">
+          <a href="#production" data-target="production">Production</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Branching" data-content="How to make a branchCreate the branch off of develop:git fetch
+git checkout develop
+git branch <branch-name>
+git checkout <branch-name>
+
+# or the shorthand
+
+git checkout -b <branch-name> origin/develop
+">
+          <a href="#branching" data-target="branching">Branching</a>
+                <ul>
+        <li data-title="How to make a branch" data-content="Create the branch off of develop:git fetch
+git checkout develop
+git branch <branch-name>
+git checkout <branch-name>
+
+# or the shorthand
+
+git checkout -b <branch-name> origin/develop
+">
+          <a href="#how-to-make-a-branch" data-target="how-to-make-a-branch">How to make a branch</a>
+                <ul>
+        <li data-title="Naming the branch" data-content="Having a convention allows for:
+  all branches connected to a story or ticket are easily connected now and in
+the future
+  others can easily identify the intent of the contents without having to
+interpret a commit’s title
+  encourages small and concise commits which keeps the focus on the type of
+change being made. If you are adding a new feature and fix something along the
+way, that should be 2 commits instead of 1
+">
+          <a href="#naming-the-branch" data-target="naming-the-branch">Naming the branch</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Convention" data-content="
+  
+    Feature
+
+    A branch that adds a new feature, as defined by the specified story
+  
+  
+    Fix
+
+    A branch that corrects a problem in a feature already merged into develop
+  
+  
+    Chore
+
+    Chore branches are used for routine tasks for maintaining the application like
+package upgrades, they don’t provide a new feature or fix an existing one
+  
+  
+    Hotfix
+
+    A branch that adds an urgent fix to a problem that affects production. These
+branches are based on master and do not go via develop, so must be also be
+merged into develop when deployed
+  
+feature/{STORY ID}-{CONCISE TITLE}
+fix/{STORY/TICKET ID}-{CONCISE TITLE}
+chore/{STORY ID}-{CONCISE TITLE}
+hotfix/{TICKET ID}-{CONCISE TITLE}
+">
+          <a href="#convention" data-target="convention">Convention</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Examples" data-content="feature/523797477-add-logging-to-registration
+fix/423797477-logging-happens-in-both-environments
+chore/1934729239-reduce-caching-for-contact-details
+hotfix/253947623-remove-breaking-change-to-repair-creation
+">
+          <a href="#examples" data-target="examples">Examples</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Update your branch with the latest changes on develop (rebasing)" data-content="When working in a team, other pull requests will often get merged in before
+yours is finished. It’s important to make sure you’re developing against the
+latest version of the code base as much as possible.You can do this by rebasing your work on top of the develop branch.git checkout <branch-name>
+git rebase origin/develop
+git push --force-with-lease
+During the rebase there may be conflicts which should be resolved at that point.
+If in doubt talk to the other developer who you’re conflicting with and reason
+out what the correct state should be.Force pushing in this situation is the only time it should be necessary, adding
+--force-with-lease ensures you don’t accidentally overwrite someone else’s
+additions.">
+          <a href="#update-your-branch-with-the-latest-changes-on-develop-rebasing" data-target="update-your-branch-with-the-latest-changes-on-develop-rebasing">Update your branch with the latest changes on develop (rebasing)</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Committing" data-content="Taking the time to write good commits is as valuable as writing good code. They
+record the story of each project, line by line, which makes it possible to
+understand now and in the future.Ask yourself these questions:
+  what is the new behaviour of the application?
+  have I written down why I chose this approach over the others?
+  are there relevant links I could include to help the next person?
+">
+          <a href="#committing" data-target="committing">Committing</a>
+                <ul>
+        <li data-title="Examples" data-content="# Poor
+Added repairs
+
+# Great
+Job postings are now displayed on the landing page
+
+- Getting the Job postings out of the external API proved difficult but I think
+  the solution we have will allow us to easily upgrade to the new release they
+  have planned: <link>
+# Poor
+Fixed the form
+
+# Great
+Food order form works with special characters
+
+- Previously the form failed to send if the starter value included any of the
+  following characters: `!@£$%^&`
+- Users should be able to use these characters and after a short investigation
+  I found this new bug in PHP: <link>
+- As a short term workaround until the bug is fixed I am stripping out any of
+  these characters if they are present.
+# Poor
+Gem upgrade
+
+# Great
+Upgrade widget to v1.2.1
+
+- This widget now includes a patch that improves resilience: <link>
+- We are still unable to upgrade to v2.x as we need to do some migration work
+  first
+">
+          <a href="#examples-1" data-target="examples-1">Examples</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Code review" data-content="We believe that code reviews are important. They help us to learn from each
+other, to maintain consistency in the code we write, and to ensure we push
+well-reasoned and bug-free code to Production. When performing a code review, we
+make sure that:
+  we cannot see any code that could give rise to a security vulnerability
+  the story has been implemented clearly and maintainably
+  the code contains well-written commits that help us to understand the changes
+  the code follows code style guides
+  the changelog has been updated is the change was
+significant
+It is not important that a story be implemented exactly how you would have done
+it. Only that it meets the criteria above. When we find problems, we give
+feedback to the developer who implemented the story, not fix things ourselves
+inline with our principle of ‘Own your code’.It’s also important that code reviews have a constructive, amicable tone. To
+this end, we bear in mind the
+Thoughtbot code
+review guide, which contains good rules for keeping things positive and useful.">
+          <a href="#code-review" data-target="code-review">Code review</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Code style" data-content="We write our code in a consistent way to ensure it is well-structured and easy
+to follow for the rest of the team. Similar to the guidelines laid out in
+Thoughtbot’s style guide,
+approach this guidance as a way to code on present and future projects, not
+something to retroactively add to existing projects. When working on existing
+projects or joining a project, make sure to follow the code style that is
+already in place.While it can be tempting to write a new style guide, it’s not a worthwhile
+investment of time. It’s important that a consistent style is adopted, but
+mostly unimportant which specific style it is. So rather than having our own, we
+have chosen the following existing style guides for our work:
+  PHP -
+PSR-2
+  Ruby -
+Ruby community style guide
+  Sass -
+Sass Guidelines - Syntax and formatting
+  JavaScript - Standard
+">
+          <a href="#code-style" data-target="code-style">Code style</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Pull requests" data-content="When we have finished a piece of work on a branch, we
+make a pull request
+using the project’s GitHub/GitLab page.We prefix pull request titles with the Story ID to make it easy to find the
+story and the acceptance criteria that should be met.A good pull request should:
+  be created by the authoring developer
+  meet all of the acceptance criteria on the associated story
+  focus on the single problem at hand, not doing so will usually increase the
+time taken to get it merged
+  include appropriate detail to assist the reviewer, this includes links to
+relevant content and a duplication of anything of note in the commit
+descriptions
+  update the changelog if it’s a significant change
+# Poor
+A new registration form and fix a bug with contacts
+
+# Great
+[123456789] New users can now register for an account
+
+- This has been rate limited, would like your feedback on the values I've chosen
+- Passwords are encrypted using BCrypt, so I've taken this opportunity to
+  increase the default rounds from 8 to 12
+">
+          <a href="#pull-requests" data-target="pull-requests">Pull requests</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Versioning releases" data-content="We don’t use explicit versioning for application code; rather we operate a
+continuous deployment approach as described in the deploying
+section.However, when building libraries, APIs, or other software components designed
+for reuse, versioning is important. All reusable components should have properly
+versioned releases. This includes Wordpress plugins and themes, Ruby gems, and
+so on, whether open source or otherwise.Versioning should follow the Semantic Versioning standard,
+and projects that use them should specify their requirements so that the
+appropriate versions are used.Releases should be created by:
+  updating the version appropriately in package metadata and committing to git
+  updating the changelog to draw a line under changes and
+attribute them to a version
+  tagging that commit using a tag of the form vX.Y.Z
+  building the appropriate release package from that tag
+">
+          <a href="#versioning-releases" data-target="versioning-releases">Versioning releases</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Tracking changes" data-content="If a project is not continuously released, and has staged releases, we want to
+track what goes into those releases, so we can be confident about what we’re
+shipping, know when we shipped it, and share what we’ve done with our clients
+(and maybe beyond).Including a CHANGELOG.md file in the root of a repository is a standard for
+tracking these changes against versions, but the only work if they are updated.
+When introducing a significant change to a project, we should be recording that
+change at the time we make it, while the issue is fresh in our minds.We follow the Keep a Changelog 1.0.0
+format for the changelogs we keep. This means integrating updating the changelog
+into the release process for the project. This also means
+versioning the project.If the team decides that a changelog is not appropriate for a project, you
+should document that decision as an
+Architectural Decision Record (ADR), so future
+maintainers and contributors understand the reasoning for not doing so.See
+Tech Team RFC-019
+for more context around this decision.">
+          <a href="#tracking-changes" data-target="tracking-changes">Tracking changes</a>
+          
+        </li>
+      </ul>
+
+      </nav>
+    </aside>
+    <main>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <div style="overflow: auto;">
+            <p style="float: right;">
+              <a
+                href="https://github.com/dxw/playbook/edit/master/guides/development-workflow.md"
+                >Edit document</a
+              >
+            </p>
+          </div>
+          <h1>Development workflow</h1>
+          <ul>
+  <li><a href="#development-principles">Development principles</a></li>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#the-lifecycle-of-a-story">The lifecycle of a story</a></li>
+  <li><a href="#working-on-a-support-ticket">Working on a support ticket</a></li>
+  <li><a href="#deploying">Deploying</a></li>
+  <li><a href="#branching">Branching</a></li>
+  <li><a href="#committing">Committing</a></li>
+  <li><a href="#code-review">Code review</a></li>
+  <li><a href="#code-style">Code style</a></li>
+  <li><a href="#pull-requests">Pull requests</a></li>
+  <li><a href="#versioning-releases">Versioning releases</a></li>
+  <li><a href="#tracking-changes">Tracking changes</a></li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+
+<h3 id="development-principles">Development principles</h3>
+
+<p>As part of regular retrospectives we evolve our principles by identifying what
+works well. When we try something that helps with a particular pattern of
+problem the team can acknowledge the benefits it brings and introduce it as a
+principle.</p>
+
+<h4 id="communicate-frequently">Communicate frequently</h4>
+
+<ul>
+  <li>space to learn from each other</li>
+  <li>make shared decisions</li>
+  <li>prevent duplication</li>
+  <li>solve problems quicker</li>
+</ul>
+
+<h4 id="two-pairs-of-eyes">Two pairs of eyes</h4>
+
+<p>All code we write needs be reviewed by another developer. We hope that doing
+this will mean we:</p>
+
+<ul>
+  <li>ship better quality code</li>
+  <li>get the opportunity to learn new skills</li>
+  <li>increase the shared knowledge of our products</li>
+</ul>
+
+<h4 id="everything-is-tracked">Everything is tracked</h4>
+
+<p>All code we write is represented in Trello (or another ticketing system as
+required by the client) so that:</p>
+
+<ul>
+  <li>the client can easily visualise how we’re doing and what needs their attention</li>
+  <li>the team can see and react to bottle necks</li>
+  <li>delivery managers can see what cards have been lingering</li>
+  <li>developers can be confident what they are deploying</li>
+</ul>
+
+<h4 id="own-your-code">Own your code</h4>
+
+<p>Having the opportunity to see a piece of work through to completion is a great
+way to for developers to grow. To encourage this we ask reviewers to leave their
+feedback, ask questions and discuss the code but not to make any changes without
+the okay from the author. This will hopefully allow us to:</p>
+
+<ul>
+  <li>learn from our mistakes</li>
+  <li>create personal achievements from seeing work through to production</li>
+</ul>
+
+<h4 id="do-the-smallest-amount-of-good-work">Do the smallest amount of good work</h4>
+
+<p>We aspire to regularly ship
+<a href="https://robots.thoughtbot.com/what-is-good-code">good code</a> and deliver it to
+the users as often as possible. Doing so efficiently requires a balanced
+approach to development.</p>
+
+<p>Good signs:</p>
+
+<ul>
+  <li>the code is easy to read and understand</li>
+  <li>the code didn’t take too long to write</li>
+  <li>the code is relatively easy to change</li>
+</ul>
+
+<p>Bad signs:</p>
+
+<ul>
+  <li>spending too much time over engineering (gold plating) our code</li>
+  <li>delivering too quickly at the cost of any code quality</li>
+</ul>
+
+<h4 id="the-twenty-minute-rules">The twenty-minute rules</h4>
+
+<ol>
+  <li>being helpful is one of our values and this extends to development. If after
+spending 20 minutes on a problem you haven’t made progress, invoke the
+twenty-minute rule with another developer and get their advice</li>
+  <li>discussions that go on for twenty-minutes or more can be a time sink. If an
+agreement on how to progress cannot be found after 20 minutes, mentioning
+this rule provides a pre-agreed way to acknowledge the problem and get to a
+resolution as quickly as possible. Rate your concern for the issue out of 10
+and a next step should naturally emerge</li>
+</ol>
+
+<hr />
+
+<h2 id="the-lifecycle-of-a-story">The lifecycle of a story</h2>
+
+<p>Different projects have small variations to this process, but here are some
+general guidelines.</p>
+
+<h3 id="start-work-on-a-new-story">Start work on a new story</h3>
+
+<ol>
+  <li>assign yourself to the Trello card</li>
+  <li>move the card to Trello’s ‘In progress’ column</li>
+  <li>
+    <p><a href="#how-to-make-a-branch">make a new branch</a> off of <code class="language-plaintext highlighter-rouge">develop</code></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -b &lt;branch-name&gt; origin/develop
+</code></pre></div>    </div>
+  </li>
+  <li>meet the acceptance criteria</li>
+  <li>update the <a href="#tracking-changes">changelog</a></li>
+  <li><a href="#committing">commit</a> your code</li>
+</ol>
+
+<h3 id="submit-your-story-for-code-review">Submit your story for code review</h3>
+
+<ol>
+  <li>
+    <p>push your branch to the remote repository</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin &lt;branch-name&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>create a <a href="#pull-requests">pull request</a> into the <code class="language-plaintext highlighter-rouge">develop</code> branch</li>
+  <li>link the Trello card to the new pull request, linking directly or by using
+the Trello
+<a href="https://help.trello.com/article/1021-integrating-trello-with-zendesk">power up</a></li>
+  <li>move the Trello card into the ‘Awaiting review column’</li>
+</ol>
+
+<h3 id="reviewing-another-developers-pull-request">Reviewing another developer’s pull request</h3>
+
+<ul>
+  <li>move the Trello card into the ‘Under code review’ column</li>
+  <li>find and read the Trello card’s acceptance criteria</li>
+  <li>find and read through the pull request, carrying out a
+<a href="#code-review">code review</a>
+    <ul>
+      <li>if it is ready:
+        <ul>
+          <li>press the merge button</li>
+          <li>delete the leftover branch</li>
+          <li>move the Trello card into ‘Deployed to Staging’</li>
+        </ul>
+      </li>
+      <li>if it’s not ready:
+        <ul>
+          <li>leave feedback</li>
+          <li>mention the author so they’re aware</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="working-on-a-support-ticket">Working on a support ticket</h2>
+
+<p>Support tickets can fall into two types of work flow depending on their
+severity.</p>
+
+<p>Most commonly tickets will simply fall into the same
+<a href="#the-lifecycle-of-a-story">story process</a>, where fixes will go through
+<code class="language-plaintext highlighter-rouge">develop</code> and Staging for review and acceptance.</p>
+
+<p>They can however be sometimes when there’s an emergency which requires a change
+to production ASAP. This is when we reach for a <a href="#hotfix">hotfix</a>.</p>
+
+<h3 id="hotfix">Hotfix</h3>
+
+<p>We think of hotfixes in the same way as
+<a href="https://en.wikipedia.org/wiki/Hotfix">Wikipedia</a> describes them:</p>
+
+<blockquote>
+  <p>a hotfix implies that the change may have been made quickly and outside normal
+development and testing processes</p>
+</blockquote>
+
+<p>and also</p>
+
+<blockquote>
+  <p>A hotfix is a change deemed critical enough that it cannot be held off until a
+regular content patch.</p>
+</blockquote>
+
+<p>An emergency for instance would be when:</p>
+
+<ol>
+  <li>production is unusable - users are directly affected</li>
+  <li>a serious vulnerability has been discovered and is currently exploitable</li>
+</ol>
+
+<h4 id="issue-a-hotfix">Issue a hotfix</h4>
+
+<p>When the decision to make a hotfix is made it’s important to communicate well.
+Involve the rest of the team at this point and discuss the plan of action,
+allowing delivery managers to communicate back to the client.</p>
+
+<p>This is the only time a branch should be based off of <code class="language-plaintext highlighter-rouge">master</code> instead of
+<code class="language-plaintext highlighter-rouge">develop</code>.</p>
+
+<ol>
+  <li>create a new card in Trello and move it to ‘In progress’</li>
+  <li>
+    <p>create a new branch off of <code class="language-plaintext highlighter-rouge">master</code></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -b &lt;branch-name&gt; origin/master
+</code></pre></div>    </div>
+  </li>
+  <li><a href="#committing">commit</a> the fix</li>
+  <li>make a <a href="#pull-requests">pull request</a> into <code class="language-plaintext highlighter-rouge">master</code></li>
+  <li>move the Trello card into ‘Awaiting review’</li>
+</ol>
+
+<h4 id="review-and-deploy-a-hotfix">Review and deploy a hotfix</h4>
+
+<ol>
+  <li>review the code</li>
+  <li>check the fix has been tested locally if possible</li>
+  <li>merge the pull request</li>
+  <li>
+    <p>manually merge the pull request back into <code class="language-plaintext highlighter-rouge">develop</code></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout develop
+git pull
+git merge origin/master
+git push
+</code></pre></div>    </div>
+  </li>
+  <li>move the card on Trello into ‘Deployed to production’</li>
+  <li>update the <a href="#tracking-changes">changelog</a></li>
+</ol>
+
+<hr />
+
+<h2 id="deploying">Deploying</h2>
+
+<p>Our approach is one of
+<a href="https://en.wikipedia.org/wiki/Continuous_delivery">continuous delivery</a> meaning
+we build, test and deploy as frequently as possible.</p>
+
+<p>We do this by using services such as Chef, TravisCI or GitHub Actions which are
+configured to listen for Git pushes and then initiate the correct deployment.</p>
+
+<h3 id="staging">Staging</h3>
+
+<p>Staging deployments are automatic and should be initiated when each pull request
+is merged. When you click merge the changes are immediately deployed to the
+Staging environment.</p>
+
+<p>Remember to move the card(s) along on Trello.</p>
+
+<h3 id="production">Production</h3>
+
+<p>Production deployments are done by manually merging <code class="language-plaintext highlighter-rouge">develop</code> into <code class="language-plaintext highlighter-rouge">master</code>.
+Since everything on <code class="language-plaintext highlighter-rouge">develop</code> has been through a pull request with CI tests, we
+can be confident in the quality and stability.</p>
+
+<p>To deploy:</p>
+
+<ol>
+  <li>review what work is currently awaiting deployment by looking at Trello, if
+there are any unaccepted stories then you should hold off</li>
+  <li>update the <a href="#tracking-changes">changelog</a></li>
+  <li>
+    <p>let the team know you’re deploying to Production</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch
+git checkout master
+git pull
+git merge origin/develop
+git push
+</code></pre></div>    </div>
+  </li>
+  <li>verify the deployment has been successful</li>
+  <li>tag the merge commit with the version matching the
+<a href="#tracking-changes">changelog</a></li>
+  <li>update Trello with all the cards that have now been deployed</li>
+</ol>
+
+<hr />
+
+<h2 id="branching">Branching</h2>
+
+<h3 id="how-to-make-a-branch">How to make a branch</h3>
+
+<p>Create the branch off of <code class="language-plaintext highlighter-rouge">develop</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch
+git checkout develop
+git branch &lt;branch-name&gt;
+git checkout &lt;branch-name&gt;
+
+# or the shorthand
+
+git checkout -b &lt;branch-name&gt; origin/develop
+</code></pre></div></div>
+
+<h4 id="naming-the-branch">Naming the branch</h4>
+
+<p>Having a convention allows for:</p>
+
+<ul>
+  <li>all branches connected to a story or ticket are easily connected now and in
+the future</li>
+  <li>others can easily identify the intent of the contents without having to
+interpret a commit’s title</li>
+  <li>encourages small and concise commits which keeps the focus on the type of
+change being made. If you are adding a new feature and fix something along the
+way, that <em>should</em> be 2 commits instead of 1</li>
+</ul>
+
+<h4 id="convention">Convention</h4>
+
+<ul>
+  <li>
+    <p>Feature</p>
+
+    <p>A branch that adds a new feature, as defined by the specified story</p>
+  </li>
+  <li>
+    <p>Fix</p>
+
+    <p>A branch that corrects a problem in a feature already merged into <code class="language-plaintext highlighter-rouge">develop</code></p>
+  </li>
+  <li>
+    <p>Chore</p>
+
+    <p>Chore branches are used for routine tasks for maintaining the application like
+package upgrades, they don’t provide a new feature or fix an existing one</p>
+  </li>
+  <li>
+    <p>Hotfix</p>
+
+    <p>A branch that adds an urgent fix to a problem that affects production. These
+branches are based on <code class="language-plaintext highlighter-rouge">master</code> and do not go via <code class="language-plaintext highlighter-rouge">develop</code>, so must be also be
+merged into <code class="language-plaintext highlighter-rouge">develop</code> when deployed</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>feature/{STORY ID}-{CONCISE TITLE}
+fix/{STORY/TICKET ID}-{CONCISE TITLE}
+chore/{STORY ID}-{CONCISE TITLE}
+hotfix/{TICKET ID}-{CONCISE TITLE}
+</code></pre></div></div>
+
+<h4 id="examples">Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>feature/523797477-add-logging-to-registration
+fix/423797477-logging-happens-in-both-environments
+chore/1934729239-reduce-caching-for-contact-details
+hotfix/253947623-remove-breaking-change-to-repair-creation
+</code></pre></div></div>
+
+<h3 id="update-your-branch-with-the-latest-changes-on-develop-rebasing">Update your branch with the latest changes on <code class="language-plaintext highlighter-rouge">develop</code> (rebasing)</h3>
+
+<p>When working in a team, other pull requests will often get merged in before
+yours is finished. It’s important to make sure you’re developing against the
+latest version of the code base as much as possible.</p>
+
+<p>You can do this by rebasing your work on top of the <code class="language-plaintext highlighter-rouge">develop</code> branch.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout &lt;branch-name&gt;
+git rebase origin/develop
+git push --force-with-lease
+</code></pre></div></div>
+
+<p>During the rebase there may be conflicts which should be resolved at that point.
+If in doubt talk to the other developer who you’re conflicting with and reason
+out what the correct state should be.</p>
+
+<p>Force pushing in this situation is the only time it should be necessary, adding
+<code class="language-plaintext highlighter-rouge">--force-with-lease</code> ensures you don’t accidentally overwrite someone else’s
+additions.</p>
+
+<hr />
+
+<h2 id="committing">Committing</h2>
+
+<p>Taking the time to write good commits is as valuable as writing good code. They
+record the story of each project, line by line, which makes it possible to
+understand now and in the future.</p>
+
+<p>Ask yourself these questions:</p>
+
+<ul>
+  <li>what is the <strong>new</strong> behaviour of the application?</li>
+  <li>have I written down <strong>why</strong> I chose this approach over the others?</li>
+  <li>are there relevant links I could include to help the next person?</li>
+</ul>
+
+<h3 id="examples-1">Examples</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Poor
+Added repairs
+
+# Great
+Job postings are now displayed on the landing page
+
+- Getting the Job postings out of the external API proved difficult but I think
+  the solution we have will allow us to easily upgrade to the new release they
+  have planned: &lt;link&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Poor
+Fixed the form
+
+# Great
+Food order form works with special characters
+
+- Previously the form failed to send if the starter value included any of the
+  following characters: `!@£$%^&amp;`
+- Users should be able to use these characters and after a short investigation
+  I found this new bug in PHP: &lt;link&gt;
+- As a short term workaround until the bug is fixed I am stripping out any of
+  these characters if they are present.
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Poor
+Gem upgrade
+
+# Great
+Upgrade widget to v1.2.1
+
+- This widget now includes a patch that improves resilience: &lt;link&gt;
+- We are still unable to upgrade to v2.x as we need to do some migration work
+  first
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="code-review">Code review</h2>
+
+<p>We believe that code reviews are important. They help us to learn from each
+other, to maintain consistency in the code we write, and to ensure we push
+well-reasoned and bug-free code to Production. When performing a code review, we
+make sure that:</p>
+
+<ul>
+  <li>we cannot see any code that could give rise to a security vulnerability</li>
+  <li>the story has been implemented clearly and maintainably</li>
+  <li>the code contains well-written commits that help us to understand the changes</li>
+  <li>the code follows code style guides</li>
+  <li>the <a href="#tracking-changes">changelog</a> has been updated is the change was
+significant</li>
+</ul>
+
+<p>It is not important that a story be implemented exactly how you would have done
+it. Only that it meets the criteria above. When we find problems, we give
+feedback to the developer who implemented the story, not fix things ourselves
+inline with our principle of <a href="#own-your-code">‘Own your code’</a>.</p>
+
+<p>It’s also important that code reviews have a constructive, amicable tone. To
+this end, we bear in mind the
+<a href="https://github.com/thoughtbot/guides/tree/master/code-review">Thoughtbot</a> code
+review guide, which contains good rules for keeping things positive and useful.</p>
+
+<hr />
+
+<h2 id="code-style">Code style</h2>
+
+<p>We write our code in a consistent way to ensure it is well-structured and easy
+to follow for the rest of the team. Similar to the guidelines laid out in
+<a href="https://playbook.thoughtbot.com/#style-guide">Thoughtbot’s style guide</a>,
+approach this guidance as a way to code on present and future projects, not
+something to retroactively add to existing projects. When working on existing
+projects or joining a project, make sure to follow the code style that is
+already in place.</p>
+
+<p>While it can be tempting to write a new style guide, it’s not a worthwhile
+investment of time. It’s important that a consistent style is adopted, but
+mostly unimportant which specific style it is. So rather than having our own, we
+have chosen the following existing style guides for our work:</p>
+
+<ul>
+  <li>PHP -
+<a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2</a></li>
+  <li>Ruby -
+<a href="https://github.com/bbatsov/ruby-style-guide">Ruby community style guide</a></li>
+  <li>Sass -
+<a href="https://sass-guidelin.es/#syntax--formatting">Sass Guidelines - Syntax and formatting</a></li>
+  <li>JavaScript - <a href="https://standardjs.com/">Standard</a></li>
+</ul>
+
+<hr />
+
+<h2 id="pull-requests">Pull requests</h2>
+
+<p>When we have finished a piece of work on a branch, we
+<a href="https://help.github.com/articles/using-pull-requests/">make a pull request</a>
+using the project’s GitHub/GitLab page.</p>
+
+<p>We prefix pull request titles with the Story ID to make it easy to find the
+story and the acceptance criteria that should be met.</p>
+
+<p>A good pull request should:</p>
+
+<ul>
+  <li>be created by the authoring developer</li>
+  <li>meet all of the acceptance criteria on the associated story</li>
+  <li>focus on the single problem at hand, not doing so will usually increase the
+time taken to get it merged</li>
+  <li>include appropriate detail to assist the reviewer, this includes links to
+relevant content and a duplication of anything of note in the commit
+descriptions</li>
+  <li>update the <a href="#tracking-changes">changelog</a> if it’s a significant change</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Poor
+A new registration form and fix a bug with contacts
+
+# Great
+[123456789] New users can now register for an account
+
+- This has been rate limited, would like your feedback on the values I've chosen
+- Passwords are encrypted using BCrypt, so I've taken this opportunity to
+  increase the default rounds from 8 to 12
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="versioning-releases">Versioning releases</h2>
+
+<p>We don’t use explicit versioning for application code; rather we operate a
+continuous deployment approach as described in the <a href="#deploying">deploying</a>
+section.</p>
+
+<p>However, when building libraries, APIs, or other software components designed
+for reuse, versioning is important. All reusable components should have properly
+versioned releases. This includes Wordpress plugins and themes, Ruby gems, and
+so on, whether open source or otherwise.</p>
+
+<p>Versioning should follow the <a href="https://semver.org">Semantic Versioning</a> standard,
+and projects that use them should specify their requirements so that the
+appropriate versions are used.</p>
+
+<p>Releases should be created by:</p>
+
+<ul>
+  <li>updating the version appropriately in package metadata and committing to git</li>
+  <li>updating the <a href="#tracking-changes">changelog</a> to draw a line under changes and
+attribute them to a version</li>
+  <li>tagging that commit using a tag of the form <code class="language-plaintext highlighter-rouge">vX.Y.Z</code></li>
+  <li>building the appropriate release package from that tag</li>
+</ul>
+
+<hr />
+
+<h2 id="tracking-changes">Tracking changes</h2>
+
+<p>If a project is not continuously released, and has staged releases, we want to
+track what goes into those releases, so we can be confident about what we’re
+shipping, know when we shipped it, and share what we’ve done with our clients
+(and maybe beyond).</p>
+
+<p>Including a <code class="language-plaintext highlighter-rouge">CHANGELOG.md</code> file in the root of a repository is a standard for
+tracking these changes against versions, but the only work if they are updated.
+When introducing a significant change to a project, we should be recording that
+change at the time we make it, while the issue is fresh in our minds.</p>
+
+<p>We follow the <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog 1.0.0</a>
+format for the changelogs we keep. This means integrating updating the changelog
+into the release process for the project. This also means
+<a href="#versioning-releases">versioning</a> the project.</p>
+
+<p>If the team decides that a changelog is not appropriate for a project, you
+should document that decision as an
+<a href="https://adr.github.io/">Architectural Decision Record (ADR)</a>, so future
+maintainers and contributors understand the reasoning for not doing so.</p>
+
+<p>See
+<a href="https://github.com/dxw/tech-team-rfcs/blob/master/rfc-019-use-changelogs-to-track-changes.md">Tech Team RFC-019</a>
+for more context around this decision.</p>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <button class="sidebar-toggle" aria-label="Toggle Navigation">
+        <div class="sidebar-toggle-button">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </footer>
+    <script type="text/javascript" src="/dist/main.js"></script>
+  </body>
+</html>

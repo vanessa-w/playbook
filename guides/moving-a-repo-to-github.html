@@ -1,0 +1,290 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dxw Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+
+  <body class="ready sticky">
+    <a class="skip" id="skip-to-content" href="#main">Skip to content</a>
+    <nav class="app-nav no-badge" aria-label="Main">
+      
+
+<ul>
+  <li><a href="/">Playbook</a></li>
+  <li>
+    <a href="/guides">Guides</a>
+    <ul>
+      
+      <li><a href="/guides/agile-delivery-phases.html">Agile delivery phases</a></li>
+      
+      <li><a href="/guides/card-sort.html">Card sorting</a></li>
+      
+      <li><a href="/guides/claiming-expenses.html">Claiming expenses</a></li>
+      
+      <li><a href="/guides/contributing.html">Contributing to the Playbook</a></li>
+      
+      <li><a href="/guides/daily-standups.html">Daily standups</a></li>
+      
+      <li><a href="/guides/design-career-progression-framework.html">Design career progression framework</a></li>
+      
+      <li><a href="/guides/development-workflow.html">Development workflow</a></li>
+      
+      <li><a href="/guides/plugin-advisories.html">GovPress plugin Advisories</a></li>
+      
+      <li><a href="/guides/plugin-reviews.html">GovPress plugin reviews</a></li>
+      
+      <li><a href="/guides/">Guides</a></li>
+      
+      <li><a href="/guides/how-we-do-pitches.html">How we do pitches</a></li>
+      
+      <li><a href="/guides/how-we-do-user-research.html">How we do user research</a></li>
+      
+      <li><a href="/guides/managing.html">Managing the Playbook</a></li>
+      
+      <li><a href="/guides/office-accessibility.html">Office accessibility</a></li>
+      
+      <li><a href="/guides/week-notes.html">Project weeknotes</a></li>
+      
+      <li><a href="/guides/running-a-discovery-kick-off-workshop.html">Running a discovery kick-off workshop</a></li>
+      
+      <li><a href="/guides/running-a-roadmapping-workshop.html">Running a roadmapping workshop</a></li>
+      
+      <li><a href="/guides/service-design-at-dxw.html">Service Design approach</a></li>
+      
+      <li><a href="/guides/setting-up-a-new-project.html">Setting up a new project</a></li>
+      
+      <li><a href="/guides/show-and-tells.html">Show and tells</a></li>
+      
+      <li><a href="/guides/sprint-planning.html">Sprint Planning</a></li>
+      
+      <li><a href="/guides/support-and-on-call.html">Support and on call</a></li>
+      
+      <li><a href="/guides/team-and-project-scheduling.html">Team and project scheduling</a></li>
+      
+      <li><a href="/guides/team-changes-and-handovers.html">Team changes and handovers</a></li>
+      
+      <li><a href="/guides/tone-of-voice.html">Tone of voice</a></li>
+      
+      <li><a href="/guides/web-analytics.html">Web analytics</a></li>
+      
+      <li><a href="/guides/working-remotely.html">Working remotely</a></li>
+      
+      <li><a href="/guides/wrapping-up-a-project.html">Wrapping up a project</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+<div class="logo">
+  <a href="/" title="Back to Playbook home page">
+    <img src="/dist/dmark.png" alt="" width="32" height="32" />
+  </a>
+</div>
+
+    </nav>
+    <aside class="sidebar">
+      <div class="search" role="search">
+        <div class="input-wrap">
+          <input
+            type="search"
+            value=""
+            aria-label="Search text"
+            placeholder="Type to search"
+          />
+          <div class="clear-button">
+            <svg width="26" height="24">
+              <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,8.25,15.75,15.75"
+              ></path>
+              <path
+                stroke="white"
+                stroke-width="2"
+                d="M8.25,15.75,15.75,8.25"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="results-panel"></div>
+      </div>
+      <h1 class="app-name">
+        <a class="app-name-link" data-nosearch="" href="/">dxw’s Playbook</a>
+      </h1>
+      <nav class="sidebar-nav" aria-label="sidebar">
+              <ul>
+        <li data-title="Create the new repo" data-content="Create a new private repository on Github:
+https://github.com/organizations/dxw/repositories/newThe naming convention to follow is: {organisation}-{project}-{repo}. (repo =
+“app” or “etc” or “tools”)i.e. judiciary-intranet-appIf it’s a shared theme, {organisation}-theme-{theme name}.i.e. judiciary-theme-judiciary">
+          <a href="#create-the-new-repo" data-target="create-the-new-repo">Create the new repo</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Copy across from old repository" data-content="From the old repository, set up the new Github repo with a copy of the current
+branches and tags:# go to your local copy of the old repo
+cd the-old-repo
+# fetch
+git fetch
+# Create a new master branch as a copy of the current production branch
+# (don’t do this for themes)
+git branch -f master origin/production
+# push all local branches
+git branch | cut -b 3- | xargs git push origin
+# duplicate all branches on the origin to the new repo
+# (and duplicate local tags)
+git push git@github.com:dxw/{name-of-repo}.git \
+'refs/remotes/origin/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
+Set up the new repo on your machine:# clone the new repo
+cd /path/to/repos
+git clone git@github.com:dxw/{name-of-repo}.git
+cd {name-of-repo}
+# add the remote for the git.dxw.net repo
+git remote add govpress git@git.dxw.net:{name-of-repo}/app
+Spring cleaning:# since we’re starting fresh, we may as well prune some unnecessary branches
+git branch --merged=master -r | grep origin | grep -E '(hotfix|feature)' \
+| cut -d/ -f2- | xargs git push origin --delete
+# we don’t need production and testing
+git push origin --delete production testing
+">
+          <a href="#copy-across-from-old-repository" data-target="copy-across-from-old-repository">Copy across from old repository</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Set options" data-content="
+  Settings > Branches > Choose a branch > “master” > Protect this branch > Save
+changes
+  Settings > Collaborators & teams > Add a team > WordPress devs > and set
+permission level to write too
+">
+          <a href="#set-options" data-target="set-options">Set options</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Don’t forget" data-content="Lastly when you’ve finished all the above steps, remember to set up a local copy
+of the stage branch:git branch stage origin/stage
+And update all the plugins and submodules in the project if required:git submodule update --init --recursive
+whippet plugins install
+">
+          <a href="#dont-forget" data-target="dont-forget">Don’t forget</a>
+          
+        </li>
+      </ul>
+
+      </nav>
+    </aside>
+    <main>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <div style="overflow: auto;">
+            <p style="float: right;">
+              <a
+                href="https://github.com/dxw/playbook/edit/master/guides/moving-a-repo-to-github.md"
+                >Edit document</a
+              >
+            </p>
+          </div>
+          <h1>Transferring a repo from git.dxw.net to github</h1>
+          <p>To allow better access to our code, for us to do code reviews, and run tests,
+we’re now switching most of our repos to be on Github. This guide will take you
+through a step-by-step of how to set up a new repo on Github and what to do with
+the deployment repo on GovPress.</p>
+
+<p>For more information on deploying using the new repository setup, see the
+<a href="/guides/development-workflow#deploying">deploying guide</a>.</p>
+
+<h2 id="create-the-new-repo">Create the new repo</h2>
+
+<p>Create a new private repository on Github:
+<a href="https://github.com/organizations/dxw/repositories/new">https://github.com/organizations/dxw/repositories/new</a></p>
+
+<p>The naming convention to follow is: <code class="language-plaintext highlighter-rouge">{organisation}-{project}-{repo}</code>. (repo =
+“app” or “etc” or “tools”)</p>
+
+<p>i.e. judiciary-intranet-app</p>
+
+<p>If it’s a shared theme, <code class="language-plaintext highlighter-rouge">{organisation}-theme-{theme name}</code>.</p>
+
+<p>i.e. judiciary-theme-judiciary</p>
+
+<h2 id="copy-across-from-old-repository">Copy across from old repository</h2>
+
+<p>From the old repository, set up the new Github repo with a copy of the current
+branches and tags:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># go to your local copy of the old repo
+cd the-old-repo
+# fetch
+git fetch
+# Create a new master branch as a copy of the current production branch
+# (don’t do this for themes)
+git branch -f master origin/production
+# push all local branches
+git branch | cut -b 3- | xargs git push origin
+# duplicate all branches on the origin to the new repo
+# (and duplicate local tags)
+git push git@github.com:dxw/{name-of-repo}.git \
+'refs/remotes/origin/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
+</code></pre></div></div>
+
+<p>Set up the new repo on your machine:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># clone the new repo
+cd /path/to/repos
+git clone git@github.com:dxw/{name-of-repo}.git
+cd {name-of-repo}
+# add the remote for the git.dxw.net repo
+git remote add govpress git@git.dxw.net:{name-of-repo}/app
+</code></pre></div></div>
+
+<p>Spring cleaning:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># since we’re starting fresh, we may as well prune some unnecessary branches
+git branch --merged=master -r | grep origin | grep -E '(hotfix|feature)' \
+| cut -d/ -f2- | xargs git push origin --delete
+# we don’t need production and testing
+git push origin --delete production testing
+</code></pre></div></div>
+
+<h2 id="set-options">Set options</h2>
+
+<ol>
+  <li>Settings &gt; Branches &gt; Choose a branch &gt; “master” &gt; Protect this branch &gt; Save
+changes</li>
+  <li>Settings &gt; Collaborators &amp; teams &gt; Add a team &gt; WordPress devs &gt; and set
+permission level to write too</li>
+</ol>
+
+<h2 id="dont-forget">Don’t forget</h2>
+
+<p>Lastly when you’ve finished all the above steps, remember to set up a local copy
+of the stage branch:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch stage origin/stage
+</code></pre></div></div>
+
+<p>And update all the plugins and submodules in the project if required:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule update --init --recursive
+whippet plugins install
+</code></pre></div></div>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <button class="sidebar-toggle" aria-label="Toggle Navigation">
+        <div class="sidebar-toggle-button">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </footer>
+    <script type="text/javascript" src="/dist/main.js"></script>
+  </body>
+</html>
