@@ -1,0 +1,284 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dxw Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+
+  <body class="ready sticky">
+    <a class="skip" id="skip-to-content" href="#main">Skip to content</a>
+    <nav class="app-nav" aria-label="Main">
+
+<ul>
+  <li><a href="/">Playbook</a></li>
+  <li>
+    <a href="/guides">Guides</a>
+    <ul>
+      
+      <li><a href="/guides/agile-delivery-phases.html">Agile delivery phases</a></li>
+      
+      <li><a href="/guides/card-sort.html">Card sorting</a></li>
+      
+      <li><a href="/guides/claiming-expenses.html">Claiming expenses</a></li>
+      
+      <li><a href="/guides/contributing.html">Contributing to the Playbook</a></li>
+      
+      <li><a href="/guides/daily-standups.html">Daily standups</a></li>
+      
+      <li><a href="/guides/design-career-progression-framework.html">Design career progression framework</a></li>
+      
+      <li><a href="/guides/development-workflow.html">Development workflow</a></li>
+      
+      <li><a href="/guides/getting-a-project-ready-for-support.html">Getting a project ready for support</a></li>
+      
+      <li><a href="/guides/plugin-advisories.html">GovPress plugin Advisories</a></li>
+      
+      <li><a href="/guides/plugin-reviews.html">GovPress plugin reviews</a></li>
+      
+      <li><a href="/guides/how-we-do-pitches.html">How we do pitches</a></li>
+      
+      <li><a href="/guides/how-we-do-user-research.html">How we do user research</a></li>
+      
+      <li><a href="/guides/junior-developer-development-plan.html">Junior developer development plan</a></li>
+      
+      <li><a href="/guides/managing.html">Managing the Playbook</a></li>
+      
+      <li><a href="/guides/office-accessibility.html">Office accessibility</a></li>
+      
+      <li><a href="/guides/week-notes.html">Project weeknotes</a></li>
+      
+      <li><a href="/guides/running-a-discovery-kick-off-workshop.html">Running a discovery kick-off workshop</a></li>
+      
+      <li><a href="/guides/running-a-roadmapping-workshop.html">Running a roadmapping workshop</a></li>
+      
+      <li><a href="/guides/service-design-at-dxw.html">Service Design approach</a></li>
+      
+      <li><a href="/guides/setting-up-a-new-project.html">Setting up a new project</a></li>
+      
+      <li><a href="/guides/show-and-tells.html">Show and tells</a></li>
+      
+      <li><a href="/guides/sprint-planning.html">Sprint Planning</a></li>
+      
+      <li><a href="/guides/support-and-on-call.html">Support and on call</a></li>
+      
+      <li><a href="/guides/team-and-project-scheduling.html">Team and project scheduling</a></li>
+      
+      <li><a href="/guides/team-changes-and-handovers.html">Team changes and handovers</a></li>
+      
+      <li><a href="/guides/tone-of-voice.html">Tone of voice</a></li>
+      
+      <li><a href="/guides/moving-a-repo-to-github.html">Transferring a repo from git.dxw.net to github</a></li>
+      
+      <li><a href="/guides/web-analytics.html">Web analytics</a></li>
+      
+      <li><a href="/guides/working-remotely.html">Working remotely</a></li>
+      
+      <li><a href="/guides/wrapping-up-a-project.html">Wrapping up a project</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+<div class="logo">
+  <a href="/" title="Back to Playbook home page">
+    <img src="/dist/dmark.png" alt="" width="32" height="32" />
+  </a>
+</div>
+</nav>
+    <aside class="sidebar">
+      <div class="search" role="search">
+        <div class="input-wrap">
+          <input
+            type="search"
+            value=""
+            aria-label="Search text"
+            placeholder="Type to search"
+          />
+        </div>
+        <div class="results-panel"></div>
+      </div>
+      <nav class="sidebar-nav" aria-label="sidebar">      <h1 class="page-title">Getting a project ready for support</h1>
+      <ul>
+        <li data-title="Make sure the documentation is up to date" data-content="Support developers may not have context on the project, and rely on the
+documentation to effectively solve problems. For most projects:
+  The README file should cover how to download a project, install any
+dependencies, and start a working development instance (if necessary including
+seed data). We recommend using the
+Scripts To Rule Them All
+pattern to automate this as much as possible.
+  As much documentation as possible should be kept in one place, ideally in the
+repository alongside the code. Remember to check that documentation doesn’t
+contain any secrets.
+  There should be a single ‘front line support’ runbook which covers common
+support tasks (if necessary linking to other documentation) in as much of a
+step by step process as possible. This may be stand-alone in the repository
+alongside the code (preferred), or in the operations documentation repository.
+    
+      Add the link to this document to the Project Knowledgebase support
+runbook field (see below).
+    
+  
+  If there is a specific process for on-boarding developers before they can
+support the service (eg creating user accounts, elevating permissions) then
+this should also be kept in a single step by step document.
+    
+      Add a link to this process to the
+set up person for support
+checklist template, so that new support developers will follow the process.
+      Make sure that existing support developers know there is a new on-boarding
+checklist to follow.
+    
+  
+">
+          <a href="#make-sure-the-documentation-is-up-to-date" data-target="make-sure-the-documentation-is-up-to-date">Make sure the documentation is up to date</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Add the project to Project Knowledgebase" data-content="Our Project Knowledgebase is the
+starting point for support agents who are new to a project - it displays key
+information about the project alongside requests in Zendesk. Each project should
+have a row in the Projects table which has been completed.The basic information needed for each project is its name, the client
+the work is with, the maintenance status (if the project is currently
+supported or not), and optionally if the project is under a specific support
+package.You should also add the account manager and any delivery managers who
+have particular knowledge about the project. Add any developers who would be
+suitable for second line escalation of issues. You can either reuse an existing
+person record (the majority of developers and managers in dxw already have
+these), or create a new one.Complete as many other fields as possible. If you need help or aren’t sure what
+to add, please ask in Slack.">
+          <a href="#add-the-project-to-project-knowledgebase" data-target="add-the-project-to-project-knowledgebase">Add the project to Project Knowledgebase</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Add the project to the operations documentation" data-content="Make sure the client has a document in the
+operations documentation repository. It
+should include either documentation or (preferably) links to documentation for
+any on-boarding steps needed, and the front line support runbook.">
+          <a href="#add-the-project-to-the-operations-documentation" data-target="add-the-project-to-the-operations-documentation">Add the project to the operations documentation</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Set up monitoring systems" data-content="Make sure that enough monitoring systems are in place to raise warnings in case
+of outages, errors or service degradation (the exact level of monitoring will
+depend on the project and support contract).">
+          <a href="#set-up-monitoring-systems" data-target="set-up-monitoring-systems">Set up monitoring systems</a>
+                <ul>
+        <li data-title="Make sure error reports are raised in Zendesk" data-content="If errors are being raised by monitoring they must be delivered to our Zendesk
+instance so that the support developer can triage and address them.You should consider if alerts being raised are actionable by whoever is on
+support; if there is nothing that can be done about it then the alert will only
+be creating extra noise.">
+          <a href="#make-sure-error-reports-are-raised-in-zendesk" data-target="make-sure-error-reports-are-raised-in-zendesk">Make sure error reports are raised in Zendesk</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+</nav>
+    </aside>
+    <main>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <h1>Getting a project ready for support</h1>
+          <p>For some projects, once the primary development phase has wrapped up dxw will
+continue to offer support (subject to a support contract). Since we rotate
+support staff, things need to be in place to let them effectively respond to
+issues.</p>
+
+<h2 id="make-sure-the-documentation-is-up-to-date">Make sure the documentation is up to date</h2>
+
+<p>Support developers may not have context on the project, and rely on the
+documentation to effectively solve problems. For most projects:</p>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">README</code> file should cover how to download a project, install any
+dependencies, and start a working development instance (if necessary including
+seed data). We recommend using the
+<a href="https://github.com/dxw/scripts-to-rule-them-all">Scripts To Rule Them All</a>
+pattern to automate this as much as possible.</li>
+  <li>As much documentation as possible should be kept in one place, ideally in the
+repository alongside the code. Remember to check that documentation doesn’t
+contain any secrets.</li>
+  <li>There should be a single ‘front line support’ runbook which covers common
+support tasks (if necessary linking to other documentation) in as much of a
+step by step process as possible. This may be stand-alone in the repository
+alongside the code (preferred), or in the operations documentation repository.
+    <ul>
+      <li>Add the link to this document to the Project Knowledgebase <strong>support
+runbook</strong> field (see below).</li>
+    </ul>
+  </li>
+  <li>If there is a specific process for on-boarding developers before they can
+support the service (eg creating user accounts, elevating permissions) then
+this should also be kept in a single step by step document.
+    <ul>
+      <li>Add a link to this process to the
+<a href="https://trello.com/c/EblCSAdY/57-set-up-person-for-support">set up person for support</a>
+checklist template, so that new support developers will follow the process.</li>
+      <li>Make sure that existing support developers know there is a new on-boarding
+checklist to follow.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="add-the-project-to-project-knowledgebase">Add the project to Project Knowledgebase</h2>
+
+<p>Our <a href="https://airtable.com/tblne7bw5jfACz2XB/">Project Knowledgebase</a> is the
+starting point for support agents who are new to a project - it displays key
+information about the project alongside requests in Zendesk. Each project should
+have a row in the Projects table which has been completed.</p>
+
+<p>The basic information needed for each project is its <strong>name</strong>, the <strong>client</strong>
+the work is with, the <strong>maintenance status</strong> (if the project is currently
+supported or not), and optionally if the project is under a specific <strong>support
+package</strong>.</p>
+
+<p>You should also add the <strong>account manager</strong> and any <strong>delivery managers</strong> who
+have particular knowledge about the project. Add any <strong>developers</strong> who would be
+suitable for second line escalation of issues. You can either reuse an existing
+person record (the majority of developers and managers in dxw already have
+these), or create a new one.</p>
+
+<p>Complete as many other fields as possible. If you need help or aren’t sure what
+to add, please ask in Slack.</p>
+
+<h2 id="add-the-project-to-the-operations-documentation">Add the project to the operations documentation</h2>
+
+<p>Make sure the client has a document in the
+<a href="https://git.govpress.com/ops/docs">operations documentation</a> repository. It
+should include either documentation or (preferably) links to documentation for
+any on-boarding steps needed, and the front line support runbook.</p>
+
+<h2 id="set-up-monitoring-systems">Set up monitoring systems</h2>
+
+<p>Make sure that enough monitoring systems are in place to raise warnings in case
+of outages, errors or service degradation (the exact level of monitoring will
+depend on the project and support contract).</p>
+
+<h3 id="make-sure-error-reports-are-raised-in-zendesk">Make sure error reports are raised in Zendesk</h3>
+
+<p>If errors are being raised by monitoring they must be delivered to our Zendesk
+instance so that the support developer can triage and address them.</p>
+
+<p>You should consider if alerts being raised are actionable by whoever is on
+support; if there is nothing that can be done about it then the alert will only
+be creating extra noise.</p>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <button class="sidebar-toggle" aria-label="Toggle Navigation">
+        <div class="sidebar-toggle-button">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </footer>
+    <script type="text/javascript" src="/dist/main.js"></script>
+  </body>
+</html>
