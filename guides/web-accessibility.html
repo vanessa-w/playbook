@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dxw Playbook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+
+  <body class="ready sticky">
+    <a class="skip" id="skip-to-content" href="#main">Skip to content</a>
+    <nav class="app-nav" aria-label="Main">
+
+<ul>
+  <li><a href="/">Playbook</a></li>
+  <li>
+    <a href="/guides">Guides</a>
+    <ul>
+      
+      <li><a href="/guides/agile-delivery-phases.html">Agile delivery phases</a></li>
+      
+      <li><a href="/guides/being-a-tech-lead-at-dxw.html">Being a tech lead at dxw</a></li>
+      
+      <li><a href="/guides/card-sort.html">Card sorting</a></li>
+      
+      <li><a href="/guides/claiming-expenses.html">Claiming expenses</a></li>
+      
+      <li><a href="/guides/contributing.html">Contributing to the Playbook</a></li>
+      
+      <li><a href="/guides/daily-standups.html">Daily standups</a></li>
+      
+      <li><a href="/guides/design-career-progression-framework.html">Design career progression framework</a></li>
+      
+      <li><a href="/guides/development-workflow.html">Development workflow</a></li>
+      
+      <li><a href="/guides/getting-a-project-ready-for-support.html">Getting a project ready for support</a></li>
+      
+      <li><a href="/guides/plugin-advisories.html">GovPress plugin Advisories</a></li>
+      
+      <li><a href="/guides/plugin-reviews.html">GovPress plugin reviews</a></li>
+      
+      <li><a href="/guides/how-we-do-pitches.html">How we do pitches</a></li>
+      
+      <li><a href="/guides/how-we-do-user-research.html">How we do user research</a></li>
+      
+      <li><a href="/guides/inclusion-diversity-equality.html">Inclusion, diversity and equal opportunities policy</a></li>
+      
+      <li><a href="/guides/junior-developer-development-plan.html">Junior developer development plan</a></li>
+      
+      <li><a href="/guides/managing.html">Managing the Playbook</a></li>
+      
+      <li><a href="/guides/office-accessibility.html">Office accessibility</a></li>
+      
+      <li><a href="/guides/week-notes.html">Project weeknotes</a></li>
+      
+      <li><a href="/guides/running-a-discovery-kick-off-workshop.html">Running a discovery kick-off workshop</a></li>
+      
+      <li><a href="/guides/running-a-roadmapping-workshop.html">Running a roadmapping workshop</a></li>
+      
+      <li><a href="/guides/service-design-at-dxw.html">Service Design approach</a></li>
+      
+      <li><a href="/guides/setting-up-a-new-project.html">Setting up a new project</a></li>
+      
+      <li><a href="/guides/show-and-tells.html">Show and tells</a></li>
+      
+      <li><a href="/guides/sprint-planning.html">Sprint Planning</a></li>
+      
+      <li><a href="/guides/support-and-on-call.html">Support and on call</a></li>
+      
+      <li><a href="/guides/team-and-project-scheduling.html">Team and project scheduling</a></li>
+      
+      <li><a href="/guides/team-changes-and-handovers.html">Team changes and handovers</a></li>
+      
+      <li><a href="/guides/tone-of-voice.html">Tone of voice</a></li>
+      
+      <li><a href="/guides/moving-a-repo-to-github.html">Transferring a repo from git.dxw.net to github</a></li>
+      
+      <li><a href="/guides/web-accessibility.html">Web accessibility</a></li>
+      
+      <li><a href="/guides/web-analytics.html">Web analytics</a></li>
+      
+      <li><a href="/guides/web-performance.html">Web performance</a></li>
+      
+      <li><a href="/guides/working-remotely.html">Working remotely</a></li>
+      
+      <li><a href="/guides/wrapping-up-a-project.html">Wrapping up a project</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+<div class="logo">
+  <a href="/" title="Back to Playbook home page">
+    <img src="/dist/dmark.png" alt="" width="32" height="32" />
+  </a>
+</div>
+</nav>
+    <aside class="sidebar">
+      <div class="search" role="search">
+        <div class="input-wrap">
+          <input
+            type="search"
+            value=""
+            aria-label="Search text"
+            placeholder="Type to search"
+          />
+        </div>
+        <div class="results-panel"></div>
+      </div>
+      <nav class="sidebar-nav" aria-label="sidebar">      <h1 class="page-title">Web accessibility</h1>
+      <ul>
+        <li data-title="Why web accessibility matters" data-content="Everyone experiences disability in some form throughout their life including
+permanent, temporary and situational types of disability. This is why it matters
+that everything we create for the web is as easy to use as possible so that no
+one is excluded from using a website because of their disability.It also matters because making online public services accessible is a legal duty
+under the
+Accessibility regulations
+now meet WCAG 2.1 level AA.">
+          <a href="#why-web-accessibility-matters" data-target="why-web-accessibility-matters">Why web accessibility matters</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Design for accessibility" data-content="Test early and often in the design and prototyping stages to identify problems
+because they are often harder and more time-consuming to resolve later on in the
+development phase.
+  Review the GOV.UK Service Manual
+(Understanding WCAG 2.1)
+to check your designs meets all the criteria to level AA or above.
+  Use a tool such as Who can use to check all colour
+combinations meet WCAG grading of level AA or above.
+  Refer to the GOV.UK Design System for
+common components and patterns which have been extensively tested by users
+with different disabilities.
+">
+          <a href="#design-for-accessibility" data-target="design-for-accessibility">Design for accessibility</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Develop for accessibility" data-content="Whether working on an existing codebase or starting an entirely new project,
+everything should be accessible to WCAG 2.1 level AA. This includes any plugins
+authored outside dxw.
+  The GOV.UK Service Manual
+(Understanding WCAG 2.1)
+is also a helpful starting point to assess parts of your development work
+against for accessibility.
+  Test existing code and plugins for accessibility before and after
+working on a fix or feature.
+  When adding details for a pull request flag anything that might need
+accessibility testing such as output from HTML, CSS and JavaScript.
+">
+          <a href="#develop-for-accessibility" data-target="develop-for-accessibility">Develop for accessibility</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Accessibility testing" data-content="Everything we create for the web that involves user interaction should be tested
+for accessibility. Testing may also be necessary during routine maintenance and
+for any updates or changes to a website. There’s also guidelines applicable to
+authoring tools such as WordPress and other content management systems.
+Authoring tools need to be accessible, so that people with disabilities can
+create web content as well as consume it.">
+          <a href="#accessibility-testing" data-target="accessibility-testing">Accessibility testing</a>
+                <ul>
+        <li data-title="Automated testing" data-content="For automated testing you should be able to identify around 50% of code-based
+accessibility issues. You must also follow up these with manual tests. A couple
+of extensions you can install on your browser for automated testing include:
+  The WAVE extension adds on overlay to
+the webpage which outlines all elements of the page such as landmarks,
+headings, anchors and aria properties. Alongside this WAVE highlights any
+problems categorised as either warnings or errors. This can include issues
+such as poor contrast, empty elements and incorrect use of markup.
+  axe DevTools is an extension
+for Chrome, Firefox and Edge which you can use to test for accessibility
+defects. This identifies defects in relation to their user impact level as
+well as any corresponding WCAG guidelines.
+  axe cli
+is a command line interface for axe to run quick accessibility tests.
+">
+          <a href="#automated-testing" data-target="automated-testing">Automated testing</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Manual testing" data-content="Manual testing needs to identify whether a website is accessible with or without
+use of assistive technologies. In your testing you need to identify any traps,
+barriers or challenges which make a website hard or impossible to access.">
+          <a href="#manual-testing" data-target="manual-testing">Manual testing</a>
+                <ul>
+        <li data-title="Guides manual testing" data-content="There are a couple of helpful tools available for performing manual testing.
+These provide visual helpers to help your assessment and keep a track of all
+completed or outstanding tests.
+  Microsoft Accessibility Insights
+  axe DevTools Pro (subscription
+required)
+Prepare to spend anything upwards of one day, to a week, to perform manual
+testing comprehensively depending on the size of your project or task. Try to
+test with real devices, as opposed to emulators, where possible including:
+  Phone or tablet running iOS
+  Phone or tablet running Android
+  Laptop or desktop machine running Windows + NVDA software installed
+  Laptop or desktop machine running macOS
+Browser/screen reader combinations to include in your testing procedure:">
+          <a href="#guides-manual-testing" data-target="guides-manual-testing">Guides manual testing</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Mac" data-content="
+  VoiceOver/Safari
+">
+          <a href="#mac" data-target="mac">Mac</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Windows" data-content="
+  NVDA/Firefox
+  Narrator/Edge
+">
+          <a href="#windows" data-target="windows">Windows</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="iOS" data-content="
+  VoiceOver/Safari
+">
+          <a href="#ios" data-target="ios">iOS</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Android" data-content="
+  Talkback/Chrome
+Each screen reader comes with a variety of different keyboard shortcut commands
+and dialogues to help navigate and interact with a website.
+Screen Reader Keyboard Shortcuts and Gestures by Deque University
+provides specific guidance on how to use them.">
+          <a href="#android" data-target="android">Android</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Magnification and viewport size" data-content="Part of your testing also needs to identify any failures for a website to
+resize and
+reflow the text and
+layout sufficiently to a zoom level of up to 400% and smaller viewport sizes
+down to 320 CSS pixels. This helps support people with low vision who need to
+enlarge text and read it in a single column as well as anyone who browses with a
+mobile.">
+          <a href="#magnification-and-viewport-size" data-target="magnification-and-viewport-size">Magnification and viewport size</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Fixing accessibility issues" data-content="Accessibility issues found need fixing before going live. Be sure you fully
+understand why an issue isn’t accessible before finding ways to resolve it. Once
+you’re confident with the changes made then restart automated and manual testing
+for the affected pages or component that the issue is present in.">
+          <a href="#fixing-accessibility-issues" data-target="fixing-accessibility-issues">Fixing accessibility issues</a>
+                <ul>
+        <li data-title="Prioritisation" data-content="Ultimately you should be looking to resolve all accessibility issues. Where
+there’s time and budgetary constraints, then prioritise those which have the
+highest level of user impact, such as critical or serious. Add any unresolved
+issues to an accessibility statement with explanation for when you anticipate
+they will be fixed. Every release must be accessibility tested.">
+          <a href="#prioritisation" data-target="prioritisation">Prioritisation</a>
+          
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Assignment" data-content="It’s the responsibility of everyone on a project team to understand how
+accessibility impacts on their role from managing a project to designing,
+building and maintaining it. Communicate often with your team and include
+accessibility in decision-making at all stages.">
+          <a href="#assignment" data-target="assignment">Assignment</a>
+          
+        </li>
+      </ul>
+
+        </li>
+      </ul>
+      <ul>
+        <li data-title="Further information" data-content="
+  How to Meet WCAG (Quick Reference)
+  Making online public services accessible
+  Authoring Tool Accessibility Guidelines overview
+  GDS Empathy Lab
+">
+          <a href="#further-information" data-target="further-information">Further information</a>
+          
+        </li>
+      </ul>
+</nav>
+    </aside>
+    <main>
+      <section class="content">
+        <article class="markdown-section" id="main">
+          <h1>Web accessibility</h1>
+          <h2 id="why-web-accessibility-matters">Why web accessibility matters</h2>
+
+<p>Everyone experiences disability in some form throughout their life including
+permanent, temporary and situational types of disability. This is why it matters
+that everything we create for the web is as easy to use as possible so that no
+one is excluded from using a website because of their disability.</p>
+
+<p>It also matters because making online public services accessible is a legal duty
+under the
+<a href="http://www.legislation.gov.uk/uksi/2018/952/contents/made">Accessibility regulations</a>
+now meet WCAG 2.1 level AA.</p>
+
+<h2 id="design-for-accessibility">Design for accessibility</h2>
+
+<p>Test early and often in the design and prototyping stages to identify problems
+because they are often harder and more time-consuming to resolve later on in the
+development phase.</p>
+
+<ul>
+  <li>Review the GOV.UK Service Manual
+<a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag">(Understanding WCAG 2.1)</a>
+to check your designs meets all the criteria to level AA or above.</li>
+  <li>Use a tool such as <a href="https://whocanuse.com/">Who can use</a> to check all colour
+combinations meet WCAG grading of level AA or above.</li>
+  <li>Refer to the <a href="https://design-system.service.gov.uk/">GOV.UK Design System</a> for
+common components and patterns which have been extensively tested by users
+with different disabilities.</li>
+</ul>
+
+<h2 id="develop-for-accessibility">Develop for accessibility</h2>
+
+<p>Whether working on an existing codebase or starting an entirely new project,
+everything should be accessible to WCAG 2.1 level AA. This includes any plugins
+authored outside dxw.</p>
+
+<ul>
+  <li>The GOV.UK Service Manual
+<a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag">(Understanding WCAG 2.1)</a>
+is also a helpful starting point to assess parts of your development work
+against for accessibility.</li>
+  <li>Test existing code and plugins for accessibility <strong>before</strong> and <strong>after</strong>
+working on a fix or feature.</li>
+  <li>When adding details for a pull request flag anything that might need
+accessibility testing such as output from HTML, CSS and JavaScript.</li>
+</ul>
+
+<h2 id="accessibility-testing">Accessibility testing</h2>
+
+<p>Everything we create for the web that involves user interaction should be tested
+for accessibility. Testing may also be necessary during routine maintenance and
+for any updates or changes to a website. There’s also guidelines applicable to
+authoring tools such as WordPress and other content management systems.
+Authoring tools need to be accessible, so that people with disabilities can
+create web content as well as consume it.</p>
+
+<h3 id="automated-testing">Automated testing</h3>
+
+<p>For automated testing you should be able to identify around 50% of code-based
+accessibility issues. You must also follow up these with manual tests. A couple
+of extensions you can install on your browser for automated testing include:</p>
+
+<ul>
+  <li>The <a href="https://wave.webaim.org/extension/">WAVE extension</a> adds on overlay to
+the webpage which outlines all elements of the page such as landmarks,
+headings, anchors and aria properties. Alongside this WAVE highlights any
+problems categorised as either warnings or errors. This can include issues
+such as poor contrast, empty elements and incorrect use of markup.</li>
+  <li><a href="https://www.deque.com/axe/browser-extensions/">axe DevTools</a> is an extension
+for Chrome, Firefox and Edge which you can use to test for accessibility
+defects. This identifies defects in relation to their user impact level as
+well as any corresponding WCAG guidelines.</li>
+  <li><a href="https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli">axe cli</a>
+is a command line interface for axe to run quick accessibility tests.</li>
+</ul>
+
+<h3 id="manual-testing">Manual testing</h3>
+
+<p>Manual testing needs to identify whether a website is accessible with or without
+use of assistive technologies. In your testing you need to identify any traps,
+barriers or challenges which make a website hard or impossible to access.</p>
+
+<h4 id="guides-manual-testing">Guides manual testing</h4>
+
+<p>There are a couple of helpful tools available for performing manual testing.
+These provide visual helpers to help your assessment and keep a track of all
+completed or outstanding tests.</p>
+
+<ul>
+  <li><a href="https://accessibilityinsights.io/">Microsoft Accessibility Insights</a></li>
+  <li><a href="https://www.deque.com/axe/devtools/">axe DevTools Pro</a> (subscription
+required)</li>
+</ul>
+
+<p>Prepare to spend anything upwards of one day, to a week, to perform manual
+testing comprehensively depending on the size of your project or task. Try to
+test with real devices, as opposed to emulators, where possible including:</p>
+
+<ul>
+  <li>Phone or tablet running iOS</li>
+  <li>Phone or tablet running Android</li>
+  <li>Laptop or desktop machine running Windows + NVDA software installed</li>
+  <li>Laptop or desktop machine running macOS</li>
+</ul>
+
+<p>Browser/screen reader combinations to include in your testing procedure:</p>
+
+<h4 id="mac">Mac</h4>
+
+<ul>
+  <li>VoiceOver/Safari</li>
+</ul>
+
+<h4 id="windows">Windows</h4>
+
+<ul>
+  <li>NVDA/Firefox</li>
+  <li>Narrator/Edge</li>
+</ul>
+
+<h4 id="ios">iOS</h4>
+
+<ul>
+  <li>VoiceOver/Safari</li>
+</ul>
+
+<h4 id="android">Android</h4>
+
+<ul>
+  <li>Talkback/Chrome</li>
+</ul>
+
+<p>Each screen reader comes with a variety of different keyboard shortcut commands
+and dialogues to help navigate and interact with a website.
+<a href="https://dequeuniversity.com/screenreaders/">Screen Reader Keyboard Shortcuts and Gestures by Deque University</a>
+provides specific guidance on how to use them.</p>
+
+<h4 id="magnification-and-viewport-size">Magnification and viewport size</h4>
+
+<p>Part of your testing also needs to identify any failures for a website to
+<a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html">resize</a> and
+<a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html">reflow</a> the text and
+layout sufficiently to a zoom level of up to 400% and smaller viewport sizes
+down to 320 CSS pixels. This helps support people with low vision who need to
+enlarge text and read it in a single column as well as anyone who browses with a
+mobile.</p>
+
+<h2 id="fixing-accessibility-issues">Fixing accessibility issues</h2>
+
+<p>Accessibility issues found need fixing before going live. Be sure you fully
+understand why an issue isn’t accessible before finding ways to resolve it. Once
+you’re confident with the changes made then restart automated and manual testing
+for the affected pages or component that the issue is present in.</p>
+
+<h3 id="prioritisation">Prioritisation</h3>
+
+<p>Ultimately you should be looking to resolve all accessibility issues. Where
+there’s time and budgetary constraints, then prioritise those which have the
+highest level of user impact, such as critical or serious. Add any unresolved
+issues to an accessibility statement with explanation for when you anticipate
+they will be fixed. Every release must be accessibility tested.</p>
+
+<h3 id="assignment">Assignment</h3>
+
+<p>It’s the responsibility of everyone on a project team to understand how
+accessibility impacts on their role from managing a project to designing,
+building and maintaining it. Communicate often with your team and include
+accessibility in decision-making at all stages.</p>
+
+<h2 id="further-information">Further information</h2>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG (Quick Reference)</a></li>
+  <li><a href="https://accessibility.campaign.gov.uk/">Making online public services accessible</a></li>
+  <li><a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines overview</a></li>
+  <li><a href="https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/">GDS Empathy Lab</a></li>
+</ul>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <button class="sidebar-toggle" aria-label="Toggle Navigation">
+        <div class="sidebar-toggle-button">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+    </footer>
+    <script type="text/javascript" src="/dist/main.js"></script>
+  </body>
+</html>
